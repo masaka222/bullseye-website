@@ -1,11 +1,13 @@
 import React from 'react';
-import Header from './Header.js';
+import Header from '../Header/Header';
 
 class App extends React.Component {
     render(){
+        const heading = "Now Open";
+
         return (
             <div>
-            <Header />
+            <Header heading = {heading}/>
             </div>
         );
     }

@@ -1,0 +1,13 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(250, 0, 0, 0.36), 
+        rgba(250, 0, 0, 0.36)), 
+        url("./headerbackground.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
