@@ -1,0 +1,18 @@
+.u-center-text{text-align: center}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    background-image: linear-gradient(to right, #DD2C00, #BE2600);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+}
+
+.heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
+}

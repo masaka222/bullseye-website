@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from '../Heading/Heading';
+import HeadingPrimary from '../HeadingPrimary/HeadingPrimary';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 
@@ -9,7 +9,7 @@ const Header = (props) => {
                 <header className="header">
                     <Logo />
                     <Navigation />
-                    <Heading heading = {props.heading}/>
+                    <HeadingPrimary headerHeading = {props.headerHeading}/>
                 </header>
             </div>
         );
