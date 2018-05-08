@@ -1,6 +1,7 @@
 @import "./animations.css";
 @import "components/About/About.css";
 @import "components/App/App.css";
+@import "components/Grid/Grid.css";
 @import "components/Header/Header.css";
 @import "components/HeadingPrimary/HeadingPrimary.css";
 @import "components/HeadingSecondary/HeadingSecondary.css";
