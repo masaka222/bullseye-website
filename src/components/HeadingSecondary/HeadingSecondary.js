@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeadingSecondary = (props) => {
         return (
-            <div className = "u-center-text">
+            <div className = "u-center-text u-margin-bottom-8">
                 <h2 className="heading-secondary">{props.aboutHeading}</h2>
             </div>
         );
