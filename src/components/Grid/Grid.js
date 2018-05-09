@@ -1,4 +1,7 @@
 import React from 'react';
+import Photo1 from './Photo1.JPG';
+import Photo2 from './Photo2.JPG';
+import Photo3 from './Photo3.JPG';
 
 const Grid = () => {
         return (
@@ -16,7 +19,11 @@ const Grid = () => {
                     </p>
                 </div>
                 <div className="col-1-of-2">
-                    Col 1 of 2
+                    <div className="composition">
+                        <img src = {Photo1} alt="1" className = "composition composition__photo composition__photo--p1"/>
+                        <img src = {Photo2} alt="2" className = "composition composition__photo composition__photo--p2"/>
+                        <img src = {Photo3} alt="3" className = "composition composition__photo composition__photo--p3"/>
+                    </div>
                 </div>
             </div>
         );
