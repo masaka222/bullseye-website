@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuGrid from '../MenuGrid/MenuGrid';
 
-const Menu = (props) => {
+const Menu = () => {
         return (
             <div>
                 <section className="section-menu">

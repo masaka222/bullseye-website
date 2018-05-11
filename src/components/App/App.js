@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import About from '../About/About';
 import Menu from '../Menu/Menu';
+import Reviews from '../Reviews/Reviews';
 import Footer from '../Footer/Footer';
 
 class App extends React.Component {

@@ -6,4 +6,13 @@
         rgba(250, 0, 0, 0.36)), 
         url("./MenuBackground.jpg");
         background-size: cover;
+/*
+        transform: skewY(-7deg);
+        margin-top: -8rem*/
+        margin-top: -12rem;
+        clip-path: polygon(0 15%, 100% 0, 100% 85vh, 0 100%);
+}
+
+.section-menu > * {
+  /*  transform: skewY(7deg);*/
 }

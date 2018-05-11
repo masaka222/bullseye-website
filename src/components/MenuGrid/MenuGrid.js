@@ -12,7 +12,7 @@ class MenuGrid extends React.Component {
         const food6 = "Side Orders";
 
         const icon1 = "icofont-burger";
-        const icon2 = "icofont-cabbage";
+        const icon2 = "icofont-fruits";
         const icon3 = "icofont-sub-sandwich";
         const icon4 = "icofont-hot-dog";
         const icon5 = "icofont-taco";
@@ -20,7 +20,7 @@ class MenuGrid extends React.Component {
 
         return (
             <div>
-                <div className="row">
+                <div className="row row-3-items">
                     <div className="col-1-of-3">
                         <MenuBox foodName = {food1} icon = {icon1}/>
                     </div>
@@ -31,7 +31,7 @@ class MenuGrid extends React.Component {
                         <MenuBox foodName = {food3} icon = {icon3}/>  
                     </div>
                 </div>
-                <div className="row">
+                <div className="row row-3-items">
                     <div className="col-1-of-3">
                         <MenuBox foodName = {food4} icon = {icon4}/>  
                     </div>
