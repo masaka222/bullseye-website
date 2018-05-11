@@ -1,7 +1,7 @@
 import React from 'react';
-import Photo1 from './Photo1.JPG';
+import Photo1 from './Photo1.jpg';
 import Photo2 from './Photo2.JPG';
-import Photo3 from './Photo3.JPG';
+import Photo3 from './Photo3.jpg';
 
 const Grid = () => {
         return (

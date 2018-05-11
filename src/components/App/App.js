@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import About from '../About/About';
+import Menu from '../Menu/Menu';
 import Footer from '../Footer/Footer';
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
                 <Header headerHeading = {headerHeading}/>
                 <main>
                     <About aboutHeading = {aboutHeading}/>
+                    <Menu />
                 </main>
                 <Footer/>
             </div>

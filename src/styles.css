@@ -6,4 +6,6 @@
 @import "components/HeadingPrimary/HeadingPrimary.css";
 @import "components/HeadingSecondary/HeadingSecondary.css";
 @import "components/Logo/Logo.css";
+@import "components/Menu/Menu.css";
+@import "components/MenuBox/MenuBox.css";
 @import "components/Navigation/Navigation.css";
