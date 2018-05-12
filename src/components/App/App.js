@@ -9,6 +9,7 @@ class App extends React.Component {
     render(){
         const headerHeading = "Now Open";
         const aboutHeading = "About Us";
+        const reviewsHeading = "What people think about us";
 
         return (
             <div>
@@ -16,6 +17,7 @@ class App extends React.Component {
                 <main>
                     <About aboutHeading = {aboutHeading}/>
                     <Menu />
+                    <Reviews reviewsHeading = {reviewsHeading}/>
                 </main>
                 <Footer/>
             </div>
