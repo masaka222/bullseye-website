@@ -16,6 +16,11 @@ class App extends React.Component {
         const review1text = "But good is an understatement! Absolutely delicious! Fresh and piled high and the rolls... Perfect! You had me at steak fries! Wishing you much success in the neighborhood! An added bonus is the friendly service on the phone and the delivery driver is a super nice guy too!";
         const review1img = "";
 
+        /* Variables for Review #2 */
+        const review2heading = "The guacamole chicken sandwich is so good I haven't tried anything else yet!";
+        const review2text = "Bullseye only opened a couple months ago and I've already eaten here 4 times! I keep ordering the guacamole chicken sandwich, it is so good I haven't tried anything else yet! & The fries have been perfect every time!";
+        const review2img = "";
+
         return (
             <div>
                 <Header headerHeading = {headerHeading}/>
@@ -26,6 +31,9 @@ class App extends React.Component {
                         reviewsHeading = {reviewsHeading}
                         review1heading = {review1heading}
                         review1text = {review1text}
+
+                        review2heading = {review2heading}
+                        review2text = {review2text}
                     />
                 </main>
                 <Footer/>

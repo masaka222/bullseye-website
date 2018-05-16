@@ -15,6 +15,13 @@ const Reviews = (props) => {
                         />
                     </div>
 
+                    <div className="row">
+                        <Review 
+                            reviewHeading = {props.review2heading}
+                            reviewText = {props.review2text}
+                        />
+                    </div>
+
                 </section>
             </div>
         );
