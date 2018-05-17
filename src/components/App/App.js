@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 
 class App extends React.Component {
     render(){
+        /* Headings */
         const headerHeading = "Now Open";
         const aboutHeading = "About Us";
         const reviewsHeading = "What people think about us";
@@ -21,6 +22,8 @@ class App extends React.Component {
         const review2text = "Bullseye only opened a couple months ago and I've already eaten here 4 times! I keep ordering the guacamole chicken sandwich, it is so good I haven't tried anything else yet! & The fries have been perfect every time!";
         const review2img = "";
 
+        const reviewslink = "https://www.facebook.com/pg/bullseyeburgerhouse/reviews/?ref=page_internal";
+
         return (
             <div>
                 <Header headerHeading = {headerHeading}/>
@@ -34,6 +37,8 @@ class App extends React.Component {
 
                         review2heading = {review2heading}
                         review2text = {review2text}
+
+                        reviewslink = {reviewslink}
                     />
                 </main>
                 <Footer/>
