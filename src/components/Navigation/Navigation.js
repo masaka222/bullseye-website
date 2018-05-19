@@ -4,7 +4,7 @@ const Navigation = () => {
         return (
             <div className = "header__navigation-box">
                 <ul className = "navigation">
-                    <li><a href = "#Contacts">Contacts</a></li>
+                    <li><a href = "#Contacts">Contact</a></li>
                     <li><a href = "#Reviews">Reviews</a></li>
                     <li><a href = "#Menu">Menu</a></li>
                     <li><a href = "#About">About</a></li>

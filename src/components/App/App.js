@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import About from '../About/About';
 import Menu from '../Menu/Menu';
 import Reviews from '../Reviews/Reviews';
+import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 
 class App extends React.Component {
@@ -40,6 +41,7 @@ class App extends React.Component {
 
                         reviewslink = {reviewslink}
                     />
+                    <Contact />
                 </main>
                 <Footer/>
             </div>
