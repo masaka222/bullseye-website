@@ -12,6 +12,7 @@ class App extends React.Component {
         const headerHeading = "Now Open";
         const aboutHeading = "About Us";
         const reviewsHeading = "What people think about us";
+        const contactHeading = "Get in touch";
 
         /* Variables for Review #1 */
         const review1heading = "It's about time this area has a good burger place";
@@ -29,7 +30,9 @@ class App extends React.Component {
             <div>
                 <Header headerHeading = {headerHeading}/>
                 <main>
-                    <About aboutHeading = {aboutHeading}/>
+                    <About 
+                        aboutHeading = {aboutHeading}
+                    />
                     <Menu />
                     <Reviews 
                         reviewsHeading = {reviewsHeading}
@@ -41,7 +44,9 @@ class App extends React.Component {
 
                         reviewslink = {reviewslink}
                     />
-                    <Contact />
+                    <Contact 
+                        contactHeading = {contactHeading}
+                    />
                 </main>
                 <Footer/>
             </div>
