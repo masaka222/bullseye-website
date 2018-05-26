@@ -7,7 +7,9 @@ const Header = (props) => {
         return (
             <div>
                 <header className="header">
+                <div className = "header__logo-box">
                     <Logo />
+                </div>
                     <Navigation />
                     <HeadingPrimary headerHeading = {props.headerHeading}/>
                 </header>
