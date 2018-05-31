@@ -9,9 +9,11 @@
 }
 
 .footer__logo-box{
-
+    text-align: center;
+    margin-bottom: 8rem;
 }
 
-.footer_logo{
-    
+.footer__logo{
+    width: 15rem;
+    height: auto;
 }

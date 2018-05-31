@@ -3,18 +3,24 @@ import HeadingPrimary from '../HeadingPrimary/HeadingPrimary';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 
-const Header = (props) => {
+class Header extends React.Component {
+
+    render(){
+        const logoClass = "header__logo";
+    
         return (
             <div>
                 <header className="header">
                 <div className = "header__logo-box">
-                    <Logo />
+                    <Logo logoClass = {logoClass}/>
                 </div>
                     <Navigation />
-                    <HeadingPrimary headerHeading = {props.headerHeading}/>
+                    <HeadingPrimary headerHeading = {this.props.headerHeading}/>
                 </header>
             </div>
         );
+    }
 }
+        
 
 export default Header;
