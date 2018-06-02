@@ -8,9 +8,16 @@
     transition: transform .3s;
 }
 
+.menu-box-link:link,
+.menu-box-link:visited{
+    color: #777;
+    text-decoration: none;
+}
+
 .menu-box:hover{
     transform: translateY(-1.5rem) scale(1.03);
 }
+
 
 .menu-box__icon{
     font-size: 6rem;

@@ -4,7 +4,7 @@ import MenuGrid from '../MenuGrid/MenuGrid';
 const Menu = () => {
         return (
             <div>
-                <section className="section-menu">
+                <section className="section-menu" id="section-menu">
                     <MenuGrid />
                 </section>
             </div>

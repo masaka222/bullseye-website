@@ -5,9 +5,20 @@ import Menu from '../Menu/Menu';
 import Reviews from '../Reviews/Reviews';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import MenuModal from '../MenuModal/MenuModal';
+
+/* Modal Images */
+import Burger1 from './Photo1.jpg';
+import Burger2 from './Photo3.jpg';
 
 class App extends React.Component {
     render(){
+
+        /* Margin Bottom sizes for Secondary Heading*/
+        const marginBottomSmall = "u-margin-bottom-small";
+        const marginBottomMedium = "u-margin-bottom-medium";
+        const marginBottomBig = "u-margin-bottom-big";
+
         /* Headings */
         const headerHeading = "Now Open";
         const aboutHeading = "About Us";
@@ -26,16 +37,23 @@ class App extends React.Component {
 
         const reviewslink = "https://www.facebook.com/pg/bullseyeburgerhouse/reviews/?ref=page_internal";
 
+        /* Variables for the Menu Modal */
+        /* Burgers */
+        const modalHeading = "Burgers";
+
         return (
             <div>
                 <Header headerHeading = {headerHeading}/>
                 <main>
                     <About 
                         aboutHeading = {aboutHeading}
+                        headingMarginBottom = {marginBottomBig}
                     />
                     <Menu />
                     <Reviews 
                         reviewsHeading = {reviewsHeading}
+                        headingMarginBottom = {marginBottomBig}
+
                         review1heading = {review1heading}
                         review1text = {review1text}
 
@@ -46,9 +64,16 @@ class App extends React.Component {
                     />
                     <Contact 
                         contactHeading = {contactHeading}
+                        headingMarginBottom = {marginBottomSmall}
                     />
                 </main>
                 <Footer/>
+                <MenuModal
+                    modalHeading = {modalHeading}
+                    headingMarginBottom = {marginBottomSmall}
+                    modalImage1 = {Burger1}
+                    modalImage2 = {Burger2}
+                />
             </div>
         );
     }

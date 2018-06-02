@@ -6,8 +6,11 @@ import Button from '../Button/Button';
 const Reviews = (props) => {
         return (
             <div>
-                <section className="section-reviews">
-                    <HeadingSecondary headingSecondary = {props.reviewsHeading}/>
+                <section className="section-reviews" id="section-reviews">
+                    <HeadingSecondary 
+                        headingSecondary = {props.reviewsHeading}
+                        headingMarginBottom = {props.headingMarginBottom}
+                    />
                     <div className="row">
                         <Review 
                             reviewHeading = {props.review1heading}

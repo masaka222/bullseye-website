@@ -5,8 +5,11 @@ import Grid from '../Grid/Grid';
 const About = (props) => {
         return (
             <div>
-                <section className="section-about">
-                    <HeadingSecondary headingSecondary = {props.aboutHeading}/>
+                <section className="section-about" id="section-about">
+                    <HeadingSecondary 
+                        headingSecondary = {props.aboutHeading}
+                        headingMarginBottom = {props.headingMarginBottom}
+                    />
                     <Grid/>
                </section>
             </div>

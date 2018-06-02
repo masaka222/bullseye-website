@@ -17,7 +17,10 @@ const ContactBox = (props) => {
                     />
                 </div>
                 <div className="col-1-of-2" style={{padding: '3rem 0 0 0'}}>
-                    <HeadingSecondary headingSecondary = {props.contactHeading}/>
+                    <HeadingSecondary 
+                        headingSecondary = {props.contactHeading}
+                        headingMarginBottom = {props.headingMarginBottom}
+                    />
                     <p className = "contact-box__address">
                         We’d be delighted to hear from you or answer any questions 
                         you may have. To contact us, please send a message to 
