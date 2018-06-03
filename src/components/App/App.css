@@ -5,7 +5,8 @@
 }
 
 html{
-    font-size: 62.5%;
+    /*This defines what 1rem is */
+    font-size: 62.5%;   /* 1rem = 10px; 10px/16px = 62.5% */
 }
 
 body{
@@ -17,3 +18,54 @@ body{
     color: #777;
     padding: 30px;
 }
+
+/* --------- MEDIA --------- 
+    Phone:    600px  =   37.5em
+    Tab-port: 900px  =   56.25em
+    Tab-land: 1200px =  
+    Big-Desk: 1800px
+*/
+
+/* Tablet Landscape */
+@media (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+    
+    body{
+        
+    }
+}
+
+/* Tablet portrait media */
+@media (max-width: 900px){
+    html{
+        font-size: 50%;
+    }
+    
+    body{
+        
+    }
+}
+
+/* Phone media */
+@media (max-width: 37.5em){
+    html{
+        font-size: 30%;
+    }
+    
+    body{
+        
+    }
+}
+
+/* Big Desktop 
+@media (max-width: 1800px){
+    html{
+        font-size: 75%;
+    }
+    
+    body{
+        
+    }
+}*/
