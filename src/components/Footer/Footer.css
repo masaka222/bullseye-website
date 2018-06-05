@@ -50,3 +50,20 @@
     float: right;
 }
 
+/* Tablet portrait media */
+@media (max-width: 56.25em){    /* width < 900? */
+    .footer{
+        padding: 8rem 0;
+    }
+
+    .footer__navigation{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__copyright{
+        width: 100%;
+        float: none;
+    }
+}
+

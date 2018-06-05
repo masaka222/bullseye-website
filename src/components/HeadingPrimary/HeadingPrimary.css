@@ -17,3 +17,10 @@
     font-weight: 400;
     animation: moveInBottom 1s ease-out;
 }
+
+/* Phone media */
+@media (max-width: 37.5em){     /* width < 600? */
+    .primary-heading{
+        font-size: 6rem;
+    }
+}

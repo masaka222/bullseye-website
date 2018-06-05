@@ -9,5 +9,14 @@
     background-position: top;
     position: relative;
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+/* Phone media */ 
+@media (max-width: 37.5em){     /* width < 600? */ 
+    .header{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 }

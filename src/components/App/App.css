@@ -16,20 +16,20 @@ body{
     /*font-size: 1.6rem;*/
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 /* --------- MEDIA --------- 
-    Phone:    600px  =   37.5em
-    Tab-port: 900px  =   56.25em
-    Tab-land: 1200px =  
-    Big-Desk: 1800px
+    Phone:    600px    =   37.5em
+    Tab-port: 900px    =   56.25em
+    Tab-land: 1200px   =   75em
+    Big-Desk: 1800px   =   112.5em
 */
 
 /* Tablet Landscape */
-@media (max-width: 1200px){
+@media (max-width: 75em){   /* width < 1200? */
     html{
-        font-size: 56.25%;
+        font-size: 56.25%;  /* 1rem = 9px; 9px/16px = 62.5% */
     }
     
     body{
@@ -38,29 +38,29 @@ body{
 }
 
 /* Tablet portrait media */
-@media (max-width: 900px){
+@media (max-width: 56.25em){    /* width < 900? */
     html{
         font-size: 50%;
     }
     
     body{
-        
+        padding: 0rem;
     }
 }
 
-/* Phone media */
-@media (max-width: 37.5em){
+/* Phone media */ /*
+@media (max-width: 37.5em){  */   /* width < 600? */ /*
     html{
         font-size: 30%;
     }
     
     body{
-        
+        padding: 0rem;
     }
-}
+}*/
 
-/* Big Desktop 
-@media (max-width: 1800px){
+/* Big Desktop */
+@media (min-width: 112.5em){
     html{
         font-size: 75%;
     }
@@ -68,4 +68,4 @@ body{
     body{
         
     }
-}*/
+}

@@ -98,3 +98,25 @@
 .composition:hover .composition__photo:not(:hover){
     transform: scale(0.95);
 }
+
+/* Tablet portrait media */
+@media (max-width: 56.25em){    /* width < 900? */
+    .row{
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
+    .row:not(:last-child){
+        margin-bottom: 6rem;
+    }
+
+    [class^="col-"]{
+        width: 100% !important;
+    }
+
+    [class^="col-"]:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
