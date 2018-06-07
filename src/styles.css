@@ -15,6 +15,7 @@
 @import "components/MenuBox/MenuBox.css";
 @import "components/MenuGrid/MenuGrid.css";
 @import "components/MenuModal/MenuModal.css";
-@import "components/Navigation/Navigation.css";
+@import "components/NavigationPrimary/NavigationPrimary.css";
+@import "components/NavigationSecondary/NavigationSecondary.css";
 @import "components/Review/Review.css";
 @import "components/Reviews/Reviews.css";

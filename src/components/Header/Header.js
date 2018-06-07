@@ -1,7 +1,7 @@
 import React from 'react';
 import HeadingPrimary from '../HeadingPrimary/HeadingPrimary';
 import Logo from '../Logo/Logo';
-import Navigation from '../Navigation/Navigation';
+import NavigationPrimary from '../NavigationPrimary/NavigationPrimary';
 
 class Header extends React.Component {
 
@@ -14,7 +14,7 @@ class Header extends React.Component {
                 <div className = "header__logo-box">
                     <Logo logoClass = {logoClass}/>
                 </div>
-                    <Navigation />
+                    <NavigationPrimary />
                     <HeadingPrimary headerHeading = {this.props.headerHeading}/>
                 </header>
             </div>
