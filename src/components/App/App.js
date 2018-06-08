@@ -5,6 +5,7 @@ import Menu from '../Menu/Menu';
 import Reviews from '../Reviews/Reviews';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import NavigationSecondary from '../NavigationSecondary/NavigationSecondary';
 import MenuModal from '../MenuModal/MenuModal';
 
 /* Modal Images */
@@ -43,6 +44,7 @@ class App extends React.Component {
 
         return (
             <div>
+                <NavigationSecondary/>
                 <Header headerHeading = {headerHeading}/>
                 <main>
                     <About 
