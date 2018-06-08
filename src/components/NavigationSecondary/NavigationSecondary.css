@@ -7,10 +7,11 @@
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 6rem;
     right: 6rem;
     z-index: 1002;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .navigation__background{
@@ -22,17 +23,19 @@
     right: 6.5rem;
     background-image: radial-gradient(#DD2C00, #BE2600);
     z-index: 1000;
-
-    transform: scale(50);
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .navigation__nav{
     height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1001;
+
+    opacity: 0;
+    width: 0;
+    transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navigation__list{
@@ -68,4 +71,13 @@
     background-position: 100%;
     color: #BE2600;
     transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background{
+    transform: scale(80);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav{
+    opacity: 1;
+    width: 100%;
 }
