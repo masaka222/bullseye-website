@@ -1,19 +1,35 @@
 .section-menu{
-        height: 95vh;
-    padding: 20rem 0;
-    background-image: linear-gradient(
+        padding: 20rem 0;
+        margin-top: -10rem;
+        position: relative;
+        overflow: hidden;  
+    
+        transform: skewY(-7deg);
+        /*
+        margin-top: -12rem;
+        clip-path: polygon(0 15%, 100% 0, 100% 85vh, 0 100%);*/
+}
+
+.section-menu::before{
+        padding: 20rem 0;
+        margin-top: -10rem;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(
         to right bottom,
         rgba(250, 0, 0, 0.36), 
         rgba(250, 0, 0, 0.36)), 
         url("./MenuBackground.jpg");
         background-size: cover;
-/*
-        transform: skewY(-7deg);
-        margin-top: -8rem*/
-        margin-top: -12rem;
-        clip-path: polygon(0 15%, 100% 0, 100% 85vh, 0 100%);
+        transform: skewY(7deg);
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
 }
 
 .section-menu > * {
-  /*  transform: skewY(7deg);*/
+    transform: skewY(7deg);
 }
