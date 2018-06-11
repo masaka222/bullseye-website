@@ -6,21 +6,35 @@
     text-align: center;
 }
 
-.primary-heading{
+.heading-primary{
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+    line-height: 1;
 
+    animation: moveInBottom 1s ease-out;
+}
+
+.heading-primary-main{
     display: block;
     font-size: 10rem;
     font-weight: 400;
-    animation: moveInBottom 1s ease-out;
+}
+
+.heading-secondary-main{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
 /* Phone media */
 @media (max-width: 37.5em){     /* width < 600? */
-    .primary-heading{
+    .heading-primary-main{
         font-size: 6rem;
+    }
+    .heading-secondary-main{
+        font-size: 2rem;
     }
 }

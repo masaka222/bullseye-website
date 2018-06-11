@@ -21,7 +21,8 @@ class App extends React.Component {
         const marginBottomBig = "u-margin-bottom-big";
 
         /* Headings */
-        const headerHeading = "Now Open";
+        const headerHeading = "Bullseye";
+        const headerSubHeading = "Burger House";
         const aboutHeading = "About Us";
         const reviewsHeading = "What people think about us";
         const contactHeading = "Get in touch";
@@ -45,7 +46,10 @@ class App extends React.Component {
         return (
             <div>
                 <NavigationSecondary/>
-                <Header headerHeading = {headerHeading}/>
+                <Header 
+                    headerHeading = {headerHeading}
+                    headerSubHeading = {headerSubHeading}
+                />
                 <main>
                     <About 
                         aboutHeading = {aboutHeading}

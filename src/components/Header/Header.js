@@ -15,7 +15,10 @@ class Header extends React.Component {
                     <Logo logoClass = {logoClass}/>
                 </div>
                     <NavigationPrimary />
-                    <HeadingPrimary headerHeading = {this.props.headerHeading}/>
+                    <HeadingPrimary 
+                        headerHeading = {this.props.headerHeading}
+                        headerSubHeading = {this.props.headerSubHeading}
+                    />
                 </header>
             </div>
         );
