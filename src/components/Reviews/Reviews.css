@@ -9,3 +9,10 @@
         padding: 30rem 0 15rem 0;
     }
 }
+
+/* Phone media */ 
+@media (max-width: 37.5em){     /* width < 600? */ 
+    .section-reviews{
+        padding: 30rem 0 10rem 0;
+    }
+}
