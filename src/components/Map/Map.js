@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+    withScriptjs,
     withGoogleMap,
     GoogleMap,
     Marker,
@@ -18,4 +19,4 @@ const Map = (props) => {
   );
 }
 
-export default withGoogleMap(Map);
+export default withScriptjs(withGoogleMap(Map));
