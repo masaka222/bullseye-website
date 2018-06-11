@@ -1,6 +1,6 @@
 import React from 'react';
 import HeadingSecondary from '../HeadingSecondary/HeadingSecondary';
-import Grid from '../Grid/Grid';
+import AboutGrid from '../AboutGrid/AboutGrid';
 
 const About = (props) => {
         return (
@@ -10,7 +10,7 @@ const About = (props) => {
                         headingSecondary = {props.aboutHeading}
                         headingMarginBottom = {props.headingMarginBottom}
                     />
-                    <Grid/>
+                    <AboutGrid/>
                </section>
             </div>
         );

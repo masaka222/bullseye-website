@@ -33,3 +33,10 @@
 .section-menu > * {
     transform: skewY(7deg);
 }
+
+/* Tablet portrait media */
+@media (max-width: 56.25em){    /* width < 900? */
+        .section-menu{
+                padding: 10rem 0;
+        }
+}

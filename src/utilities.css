@@ -3,3 +3,14 @@
 .u-margin-bottom-small {margin-bottom: 1.5rem !important;}
 .u-margin-bottom-medium{margin-bottom: 4rem !important;}
 .u-margin-bottom-big{margin-bottom: 8rem !important;}
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Tablet portrait media */
+@media (max-width: 56.25em){    /* width < 900? */
+    .u-margin-bottom-big{margin-bottom: 5rem !important;}
+}

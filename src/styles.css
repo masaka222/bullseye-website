@@ -1,12 +1,13 @@
 @import "./animations.css";
+@import "./grid.css";
 @import "./utilities.css";
 @import "components/About/About.css";
+@import "components/AboutGrid/AboutGrid.css";
 @import "components/App/App.css";
 @import "components/Button/Button.css";
 @import "components/Contact/Contact.css";
 @import "components/ContactBox/ContactBox.css";
 @import "components/Footer/Footer.css";
-@import "components/Grid/Grid.css";
 @import "components/Header/Header.css";
 @import "components/HeadingPrimary/HeadingPrimary.css";
 @import "components/HeadingSecondary/HeadingSecondary.css";
