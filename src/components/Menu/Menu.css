@@ -23,7 +23,7 @@
         to right bottom,
         rgba(250, 0, 0, 0.36), 
         rgba(250, 0, 0, 0.36)), 
-        url("./MenuBackground@0,25x.jpg");
+        url("./MenuBackground@0,2x.jpg");
         background-size: cover;
         background-position: top;
         transform: skewY(7deg);
@@ -46,6 +46,7 @@
 /* If screen resolution is good and screen size bigger than 600px
     or screen resolution is low, but screen size is very big */
     @media(min-resolution: 192dpi) and (min-width: 37.5em),
+          (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 112.5em){
       .header{
           background-image: linear-gradient(

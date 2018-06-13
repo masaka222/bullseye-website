@@ -3,9 +3,7 @@
     text-transform: uppercase;
     font-weight: 400;
     display: inline-block;
-    background-image: linear-gradient(to right, #DD2C00, #BE2600);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #DD2C00;
     letter-spacing: .2rem;
     transition: all .2s;
 }
@@ -13,6 +11,15 @@
 .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .heading-secondary {
+        background-image: linear-gradient(to right, #DD2C00, #BE2600);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }
 
 /* Phone media */

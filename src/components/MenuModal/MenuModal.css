@@ -80,3 +80,11 @@
 .modal__close:hover{
     color: #BE2600;
 }
+
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .modal{
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, .3) ;
+    }
+}
