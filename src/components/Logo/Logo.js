@@ -1,5 +1,6 @@
 import React from 'react';
-import bull from './logo.png';
+import bull1 from './logo1x.png';
+import bull2 from './logo2x.png';
 import Tilt from 'react-tilt';
 
 const Logo = (props) => {
@@ -7,7 +8,9 @@ const Logo = (props) => {
             <div>
                 <Tilt className="Tilt " options={{ max : 55 }} >
                     <div className="Tilt-inner">
-                        <img src={bull} alt="Logo" class={props.logoClass}/>
+                        <img srcSet={bull1+ " 1x,"+ bull2 + " 2x"} alt="Logo" class={props.logoClass}
+                             src={bull2}
+                        />
                     </div>
                 </Tilt>
             </div>

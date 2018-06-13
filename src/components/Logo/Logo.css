@@ -17,3 +17,19 @@
     width: 15rem;
     height: auto;
 }
+
+@media (max-width: 56.25em){
+    .footer__logo-box{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 37.5em){
+    .header__logo-box{
+        top: 2rem;
+        left: 2rem;
+    }
+    .header__logo{
+        height: 15rem;
+    }
+}

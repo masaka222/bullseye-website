@@ -4,7 +4,7 @@
         to right bottom,
         rgba(250, 0, 0, 0.36), 
         rgba(250, 0, 0, 0.36)), 
-        url("./headerbackground.jpg");
+        url("./headerbackground@0,25x.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -23,4 +23,18 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
+}
+
+/* Resolution */
+/* If screen resolution is good and screen size bigger than 600px
+    or screen resolution is low, but screen size is very big */
+@media(min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 112.5em){
+        .header{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(250, 0, 0, 0.36), 
+                rgba(250, 0, 0, 0.36)), 
+                url("./headerbackground@0,33x.jpg");
+        }
 }
