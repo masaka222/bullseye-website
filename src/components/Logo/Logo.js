@@ -8,7 +8,7 @@ const Logo = (props) => {
             <div>
                 <Tilt className="Tilt " options={{ max : 55 }} >
                     <div className="Tilt-inner">
-                        <img srcSet={bull1+ " 1x,"+ bull2 + " 2x"} alt="Logo" class={props.logoClass}
+                        <img srcSet={bull1+ " 1x,"+ bull2 + " 2x"} alt="Logo" className={props.logoClass}
                              src={bull2}
                         />
                     </div>

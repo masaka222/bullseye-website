@@ -24,7 +24,7 @@ class Footer extends React.Component {
                                 </div>
                             </div>
                             <div className="col-1-of-2">
-                                <p className="footer__copyright">
+                                <div className="footer__copyright">
                                     <p>282 North Keswick Avenue, </p>
                                     <p>Glenside, Pennsylvania</p>
                                     <p>215-884-8888</p>
@@ -32,7 +32,7 @@ class Footer extends React.Component {
                                     <br/>
                                     <p>Copyright &copy; by <a href="https://github.com/masaka222" className="footer__link">Vasilios Georgoudis</a>.</p>
                                     <p> Design by Jonas Schmedtmann</p>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </footer>

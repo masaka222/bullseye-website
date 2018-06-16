@@ -1,4 +1,21 @@
-.modal{
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+
+.ReactModalPortal .ReactModal__Overlay{
+    transition: all .3s ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.modal__overlay{
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -6,17 +23,9 @@
     left: 0;
     background-color: rgba(0, 0, 0, .8) ;
     z-index: 1005;
-    transition: all .3s;
-    opacity: 0;
-    visibility: hidden;
 }
 
-.modal:target{
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal__content{
+.modal{
     width: 75%;
     background-color: #fff;
     border-radius: 3px;
@@ -27,16 +36,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    right: auto;
+    bottom: auto;
     transform: translate(-50%, -50%) ;
 }
 
-.modal__left{
-    width: 33.33333%;
-    display: table-cell;
-}
-
-.modal__right{
-    width: 66.66667%;
+.modal__up{
+    width: 100%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
@@ -48,13 +54,13 @@
 }
 
 .modal__text{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
       
-    -moz-column-count: 2;
+    -moz-column-count: 3;
     -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid #777;
 
-    column-count: 2;
+    column-count: 3;
     column-gap: 4rem;
     column-rule: 1px solid #777;
 
@@ -64,8 +70,7 @@
     hyphens: auto;
 }
 
-.modal__close:link,
-.modal__close:visited{
+.modal__close{
     color: #777;
     position: absolute;
     top: 2.5rem;
@@ -75,16 +80,10 @@
     display: inline-block;
     transition: all .2s;
     line-height: 1;
+    border: none;
 }
 
 .modal__close:hover{
     color: #BE2600;
-}
-
-@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    .modal{
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, .3) ;
-    }
+    cursor: pointer;
 }

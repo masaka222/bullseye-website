@@ -29,12 +29,12 @@ const ContactBox = (props) => {
                                     </p>
                                     <br/>
                                     <br/>
-                                    <p className="contact-box__address">
+                                    <div className="contact-box__address">
                                         <p>282 North Keswick Avenue, </p>
                                         <p>Glenside, Pennsylvania</p>
                                         <p>215-884-8888</p>
                                         <p>215-884-8890</p>
-                                    </p>  
+                                    </div>  
                                 </div>
                                 <div className="col-1-of-2" >
                                     <Map
@@ -69,12 +69,12 @@ const ContactBox = (props) => {
                                 </p>
                                 <br/>
                                 <br/>
-                                <p className="contact-box__address">
+                                <div className="contact-box__address">
                                     <p>282 North Keswick Avenue, </p>
                                     <p>Glenside, Pennsylvania</p>
                                     <p>215-884-8888</p>
                                     <p>215-884-8890</p>
-                                </p>
+                                </div>
                                 <br/>
                                 <br/>    
                             </div>
