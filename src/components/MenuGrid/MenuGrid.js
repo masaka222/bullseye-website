@@ -2,52 +2,13 @@ import React from 'react';
 import MenuBox from '../MenuBox/MenuBox';
 
 class MenuGrid extends React.Component {
-    
-    state = {
-        selectedOption: undefined,
-        modalImage1: undefined,
-        modalImage2: undefined
-    };
 
     render(){
-
-        const setModalProperties = (item, subHeading, image1, image2, menu) => {
-            this.setState(()=>({
-                modalHeading: item,
-                modalSubHeading: subHeading,
-                modalMenu: menu
-            }));
-        }
-
-        const handleClearModalProperties = () => {
-            this.setState(()=>({
-                modalHeading: undefined,
-                modalSubHeading: undefined,
-                modalImage1: undefined,
-                modalImage2: undefined,
-                modalMenu: undefined
-            }));
-        }
-        
-        const food1 = "Burgers";
-        const food2 = "Salads";
-        const food3 = "Sandwiches";
-        const food4 = "hot-dogs";
-        const food5 = "Tacos";
-        const food6 = "Side Orders";
-
-        const icon1 = "icofont-burger";
-        const icon2 = "icofont-fruits";
-        const icon3 = "icofont-sub-sandwich";
-        const icon4 = "icofont-hot-dog";
-        const icon5 = "icofont-taco";
-        const icon6 = "icofont-french-fries";
-
         /* Variables for the Menu Modal */
         /* Burgers */
         const burgers = {
             title: "Burgers",
-            subtitle: "All Double burgers 1/2lb of angus beef. Served on Brioche roll",
+            subtitle: "All Double burgers 1/2lb of angus beef. Served on Brioche roll. All Burgers, except the Hamburger and the Cheeseburger, come with fries",
             icon: "icofont-burger",
             menu:  <div className="modal__text">
                             <p className = "heading-tertiary">Hamburger $4.75</p>
@@ -93,58 +54,208 @@ class MenuGrid extends React.Component {
                         </div>
         };
 
+        /* Salads */
         const salads = {
             title: "Salads",
             subtitle: "Choice of Dressing: French, Russian, Oil & Vinegar, Rasberry Vinaigrette, Honey Mustard, Creamy Italian, Ranch, Lemon, Caesar, Bleau Cheese, Light Italian or Balsamic",
             icon: "icofont-fruits",
+            menu:  <div className="modal__text">
+                        <p className = "heading-tertiary">Plain Salad $6.20</p>
+                            With Eggs
+                        <p className = "heading-tertiary">Caesar Salad $5.90</p>
+                        <p className = "heading-tertiary">Club Salad $8.50</p>
+                            Grilled chicken with romaine lettuce, tomato, onions, shredded, mozzarella cheese topped with strips of bacon, marinated balsamic dressing
+                        <p className = "heading-tertiary">Apple Walnut Salad $8.50</p>
+                            Mixed lettuce, mozzarella cheese, walnuts, apple slices, carrots, red cabbage & grilled chicken
+                        <p className = "heading-tertiary">Spinach Chicken Salad $8.50</p>
+                            Baby spinach, grilled marinated chicken strips, sliced mashrooms, tomatoes, bacon, egg & onions
+                        <p className = "heading-tertiary">Crispy Chicken Salad $8.50</p>
+                        <p className = "heading-tertiary">Buffalo Bleu Salad $8.50</p>
+                            Mixed lettuce, chicken, hot sauce, tomatoes, , banana peppers & tortilla chips
+                        <p className = "heading-tertiary">Cobb Salad $8.50</p>
+                            Mixed lettuce, crispy chicken, tomatoes, avocado, chopped eggs, crispy bacon & crumbled bleu cheese
+                        <p className = "heading-tertiary">Mandarin Chicken Salad $8.50</p>
+                            Mixed lettuce, chicken, mandarin orange, sliced cucumbers, carrots & cranberries
+                        <p className = "heading-tertiary">Caesar Salad with Chicken $8.50</p>
+                            Chicken strips mixed with fresh lettuce, croutons, grated cheese and caesar dressing
+                        <p className = "heading-tertiary">Bull's Eye Salad $8.50</p>
+                            Crispy Cretan rusks with tomato, olives, parsley, feta cheese, oregano and greek dressing
+                        <p className = "heading-tertiary">Bacon & Cheese Salad $8.50</p>
+                            Fresh green salad with chopped bacon, monterray jack cheese, grated cheese, chopped tomato, corn & ranch dressing
+                    </div>
         };
 
+        /* Sandwiches */
         const sandwiches = {
             title: "Sandwiches",
-            subtitle: "Served with French Fries, Ciabatta or Tandoori Flat Bread $8.95",
+            subtitle: "All $8.95 Sandwiches served with French Fries, Ciabatta or Tandoori Flat Bread. The $5.75 ones are served on a Brioche Bun and don't come with fries. Gyro sandwiches are on a Pita Bread and only the Platters come with fries",
             icon: "icofont-sub-sandwich",
+            menu:   <div className="modal__text">
+                        <p className = "heading-tertiary">BBQ Chicken $8.95</p>
+                            BBQ Sauce, crispy onions, cheddar cheese, lettuce, tomato & mayonnaise
+                        <p className = "heading-tertiary">Teriyaki Chicken $8.95</p>
+                            Pineapple, swiss cheese, lettuce, tomato, mayonnaise & teriyaki sauce 
+                        <p className = "heading-tertiary">Guacamole Chicken $8.95</p>
+                            Guacamole, bacon, provolone, lettuce, tomato, pickles & mayonnaise
+                        <p className = "heading-tertiary">Grilled Chicken $8.95</p>
+                            Lettuce, tomato, red onions & pickles with roaster peppers, hot peppers, fried onions & cheddar cheese
+                        <p className = "heading-tertiary">Chipotle Chicken $8.95</p>
+                            Lettuce, tomato, red onions & chipotle sauce
+                        <p className = "heading-tertiary">Buffalo Chicken $8.95</p>
+                            Lettuce, tomato, red onions, buffalo sauce & crumbled blue cheese
+                        <p className = "heading-tertiary">Roma $8.95</p>
+                            Grilled chicken, spinach, roasted peppers mozzarella cheese and mayonnaise
+                        <p className = "heading-tertiary">Chicken Parmigiana $8.95</p>
+                        <p className = "heading-tertiary">Veggie $8.95</p>
+                            Mushrooms, spinach, roasted peppers and mozzarella cheese
+                        <p className = "heading-tertiary">Cubano $8.95</p>
+                            Ham, swiss cheese, sliced pickles and honey mustard
+                        <p className = "heading-tertiary">Chicken $8.95</p>
+                            Peppers, onions, pepper jack cheese with chipotle mayonnaise
+                        <p className = "heading-tertiary">Mediterranean Panini $8.95</p>
+                            Grilled Chicken breast, fresh spinach, tomatoes and feta cheese, served on panini bread
+                        <p className = "heading-tertiary">Grilled Chicken Caesar $5.75</p>
+                            Romaine lettuce, parmesan cheese & caesar dressing
+                        <p className = "heading-tertiary">Classic Chicken Golden $5.75</p>
+                            With Chicken fillet, bacon, tomato, lettuce, mayonnaise and grated cheese
+                        <p className = "heading-tertiary">Extreme Chick n' Crisp $5.75</p>
+                            Honey Mustard sauce with crispy chicken fillet, tomato & lettuce
+                        <p className = "heading-tertiary">Gyro Sandwich $5.60</p>
+                            with lettuce, tomatoes, onions & tzatziki sauce
+                        <p className = "heading-tertiary">Gyro Platter $7.65</p>
+                            with French Fries, Greek salad and tzatziki sauce
+                        <p className = "heading-tertiary">Chicken Gyro Sandwich $6.05</p>
+                            with lettuce, tomatoes, onions and tzatziki sauce
+                        <p className = "heading-tertiary">Chicken Gyro Platter $8.10</p>
+                            with French Fries, Greek salad and tzatziki sauce
+                    </div>
         };
 
         const hotDogs = {
             title: "Hot-Dogs",
             icon: "icofont-hot-dog",
+            menu:   <div className="modal__text">
+                        <p className = "heading-tertiary">Plain hot-dog $2.95</p>
+                        <p className = "heading-tertiary">Breakfast Dog $3.95</p>
+                            Bacon, fried egg & choice of cheese
+                        <p className = "heading-tertiary">Reuben Dog $3.95</p>
+                            Chipotle sauce, swiss cheese and sauer kraut
+                        <p className = "heading-tertiary">Chilli Cheese Dog $3.95</p>
+                            Sriracha sauce and cheese Whiz
+                        <p className = "heading-tertiary">Devil Dog $3.95</p>
+                            Blue Cheese and Hot Sauce
+                        <p className = "heading-tertiary">Texas Dog $3.95</p>
+                            Bacon wrapped, fried onions and cheese whiz
+                        <p className = "heading-tertiary">BBQ Dog $3.95</p>
+                            BBQ sauce, bacon and cheddar cheese
+                        <p className = "heading-tertiary">Greek Dog $3.95</p>
+                            Lettuce, tomato and crumbled feta cheese
+                        <p className = "heading-tertiary">Philly Dog $3.95</p>
+                            Philadelphia creamy cheese, bacon, lettuce and tomatoes
+                    </div>
         };
 
         const tacos = {
             title: "Tacos",
             subtitle: "Original Mexican City Style Tacos Served in Corn Soft Tortillas Garnished with Chopped Onions and Chopped Cilantro. Served with Jalapeños and your choice salsa: Mild, Hot or Chipotle salsa. (Order of 3)",
             icon: "icofont-taco",
+            menu:   <div className="modal__text">
+                        <p className = "heading-tertiary">Beef Tacos $8.00</p>
+                            Ground Veef - Carne Molida
+                        <p className = "heading-tertiary">Chopped Chicken Tacos $8.00</p>
+                            Trozos de Pollo al Grill
+                        <p className = "heading-tertiary">Italian Sausage Tacos $8.00</p>
+                            Chorizo Italiano
+                        <p className = "heading-tertiary">Bullseye Tacos $8.50</p>
+                            Combination of Beef, Chicken and Italian sausage
+                        <p className = "heading-tertiary">Shrimp Tacos $9.00</p>
+                            Grilled Shrimp with roasted red peppers, lettuce, Mexican cheese and fresh slices of avocado
+                        <p className = "heading-tertiary">Veggie Tacos $8.00</p>
+                            Red pepper, onions, corn, jalapeños, cheese, lettuce, spinach and avocado sour cream
+                        <p className = "heading-tertiary">Chopped Flounder Breaded $9.00</p>
+                            Red pepper, onions, corn, jalapeños, cheese, lettuce, spinach and avocado sour cream
+                    </div>
         };
 
         const sideOrders = {
             title: "Side Orders",
             icon: "icofont-french-fries",
+            menu:   <div className="modal__text">
+                        <p className = "heading-tertiary">French Fries $3.95</p>
+                        <p className = "heading-tertiary">Onion Big Bars $4.50</p>
+                        <p className = "heading-tertiary">Steak Fries $4.25</p>
+                            <p>Add Cheese $1.50</p>
+                            <p>Add Bacon $1.50 </p>
+                        <p className = "heading-tertiary">Cheese & Bacon $2.00</p>
+                        <p className = "heading-tertiary">Mozzarella Sticks $5.95</p>
+                        <p className = "heading-tertiary">Chicken Tenders (5) $7.75</p>
+                        <p className = "heading-tertiary">Hand Dipped Milkshake (20oz) $4.25</p>
+                            Vanilla, Chocolate, Strawberry Banana, Chocolate Banana, PeanutButter, Rasberry, Coffee, Mint Cookie Cream, Pumpkin Pie, Egg Nog
+                        <p className = "heading-tertiary">Floats $1.00</p>
+                            Orange, Cola, Grape, Sprite, Root Beer
+                    </div>
         };
 
         return (
             <div>
                 <div className="row row-3-items">
                     <div className="col-1-of-3">
-                        <MenuBox foodName = {burgers.title} icon = {burgers.icon}/>
+                        <MenuBox   
+                            setModalProperties = {this.props.setModalProperties}
+                            title = {burgers.title} 
+                            subtitle = {burgers.subtitle}
+                            icon = {burgers.icon}
+                            menu = {burgers.menu}
+                        />
                     </div>
                     <div className="col-1-of-3">
-                        <MenuBox foodName = {salads.title} icon = {salads.icon}/>
+                        <MenuBox 
+                            setModalProperties = {this.props.setModalProperties}
+                            title = {salads.title} 
+                            subtitle = {salads.subtitle}
+                            icon = {salads.icon}
+                            menu = {salads.menu}
+                        />
                     </div>
                     <div className="col-1-of-3">
-                        <MenuBox foodName = {sandwiches.title} icon = {sandwiches.icon}/>  
+                        <MenuBox 
+                            setModalProperties = {this.props.setModalProperties}
+                            title = {sandwiches.title} 
+                            subtitle = {sandwiches.subtitle}
+                            icon = {sandwiches.icon}
+                            menu = {sandwiches.menu}
+                        />  
                     </div>
                 </div>
                 <div className="row row-3-items">
                     <div className="col-1-of-3">
-                        <MenuBox foodName = {hotDogs.title} icon = {hotDogs.icon}/>  
+                        <MenuBox 
+                            setModalProperties = {this.props.setModalProperties}
+                            title = {hotDogs.title} 
+                            subtitle = {hotDogs.subtitle}
+                            icon = {hotDogs.icon}
+                            menu = {hotDogs.menu}
+                        />  
                     </div>
                     <div className="col-1-of-3">
-                        <MenuBox foodName = {tacos.title} icon = {tacos.icon}/>
+                        <MenuBox 
+                            setModalProperties = {this.props.setModalProperties}
+                            title = {tacos.title} 
+                            subtitle = {tacos.subtitle}
+                            icon = {tacos.icon}
+                            menu = {tacos.menu}
+                        />
                     </div>
                     <div className="col-1-of-3">
-                        <MenuBox foodName = {sideOrders.title} icon = {sideOrders.icon}/>
+                        <MenuBox 
+                            setModalProperties = {this.props.setModalProperties}
+                            title = {sideOrders.title} 
+                            subtitle = {sideOrders.subtitle}
+                            icon = {sideOrders.icon}
+                            menu = {sideOrders.menu}
+                        />
                     </div>
-                </div>
+                </div> 
             </div>
         );
     }

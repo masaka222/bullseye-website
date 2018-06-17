@@ -1,11 +1,13 @@
 import React from 'react';
 import MenuGrid from '../MenuGrid/MenuGrid';
 
-const Menu = () => {
+const Menu = (props) => {
         return (
             <div>
                 <section className="section-menu" id="section-menu">
-                    <MenuGrid />
+                    <MenuGrid 
+                        setModalProperties = {props.setModalProperties}
+                    />
                 </section>
             </div>
         );

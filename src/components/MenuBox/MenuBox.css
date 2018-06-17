@@ -8,14 +8,14 @@
     transition: transform .3s;
 }
 
-.menu-box-link:link,
-.menu-box-link:visited{
+.menu-box-link{
     color: #777;
     text-decoration: none;
 }
 
 .menu-box:hover{
     transform: translateY(-1.5rem) scale(1.03);
+    cursor: pointer;
 }
 
 
