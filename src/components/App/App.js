@@ -19,7 +19,8 @@ class App extends React.Component {
         modalSubHeading: undefined,
         modalImage1: undefined,
         modalImage2: undefined,
-        modalMenu: undefined
+        modalMenu: undefined,
+        checked: false
     };
 
     render(){
@@ -48,6 +49,8 @@ class App extends React.Component {
 
         const reviewslink = "https://www.facebook.com/pg/bullseyeburgerhouse/reviews/?ref=page_internal";
         
+
+        /*Functions*/
         const setModalProperties = (item, subHeading, menu) => {
             this.setState(()=>({
                 modalHeading: item,
@@ -66,9 +69,18 @@ class App extends React.Component {
             }));
         }
 
+        const handleManageCheckBox = () => {
+            this.setState(()=>({
+                checked: !this.state.checked
+            }));
+        }
+        
         return (
             <div>
-                <NavigationSecondary/>
+                <NavigationSecondary
+                    checked = {this.state.checked}
+                    handleManageCheckBox = {handleManageCheckBox}
+                />
                 <Header 
                     headerHeading = {headerHeading}
                     headerSubHeading = {headerSubHeading}

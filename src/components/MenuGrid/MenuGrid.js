@@ -179,6 +179,7 @@ class MenuGrid extends React.Component {
 
         const sideOrders = {
             title: "Side Orders",
+            subtitle: "",
             icon: "icofont-french-fries",
             menu:   <div className="modal__text">
                         <p className = "heading-tertiary">French Fries $3.95</p>

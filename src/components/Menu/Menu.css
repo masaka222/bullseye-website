@@ -48,11 +48,11 @@
     @media(min-resolution: 192dpi) and (min-width: 37.5em),
           (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 112.5em){
-      .header{
-          background-image: linear-gradient(
-              to right bottom,
-              rgba(250, 0, 0, 0.36), 
-              rgba(250, 0, 0, 0.36)), 
-              url("./MenuBackground@0,33x.jpg");
-      }
+        .section-menu::before{
+                background-image: linear-gradient(
+                to right bottom,
+                rgba(250, 0, 0, 0.36), 
+                rgba(250, 0, 0, 0.36)), 
+                url("./MenuBackground@0,33x.jpg");
+        }
 }
