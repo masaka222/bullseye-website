@@ -4,11 +4,13 @@ import Review from '../Review/Review';
 import Button from '../Button/Button';
 
 const Reviews = (props) => {
+    const headingId = "reviews"
         return (
             <div>
                 <section className="section-reviews" id="section-reviews">
                     <HeadingSecondary 
                         headingSecondary = {props.reviewsHeading}
+                        headingId = {headingId}
                         headingMarginBottom = {props.headingMarginBottom}
                     />
                     <div className="row">

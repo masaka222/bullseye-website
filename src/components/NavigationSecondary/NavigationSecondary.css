@@ -60,8 +60,7 @@
         cursor: pointer;
     }
 
-    .navigation__link:link,
-    .navigation__link:visited{
+    .navigation__link{
         display: inline-block;
         font-size: 3rem;
         font-weight: 300;

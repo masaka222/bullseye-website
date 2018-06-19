@@ -3,7 +3,9 @@ import React from 'react';
 const HeadingSecondary = (props) => {
         return (
             <div className = {`u-center-text ${props.headingMarginBottom}`}>
-                <h2 className="heading-secondary">{props.headingSecondary}</h2>
+            {/*The marginTop actually hides the paddingTop, and this hack is done in order the Navigation
+            to stop some pixels before the actual heading*/}
+                <h2 style = {{paddingTop: '10rem', marginTop:'-10rem'}} className="heading-secondary"><span id = {props.headingId}></span>{props.headingSecondary}</h2>
             </div>
         );
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 
-const NavigationPrimary = () => {
+const NavigationPrimary = (props) => { 
         return (
                 <div className = "header__navigation-box">
                     <ul className = "navigation">
-                        <li><a href = "#section-contact">Contact</a></li>
-                        <li><a href = "#section-reviews">Reviews</a></li>
-                        <li><a href = "#section-menu">Menu</a></li>
-                        <li><a href = "#section-about">About</a></li>
+                        <li><a onClick={()=>{props.scroll.To('section-contact', 1000)}}>Contact</a></li>
+                        <li><a onClick={()=>{props.scroll.To('reviews', 400)}}>Reviews</a></li>
+                        <li><a onClick={()=>{props.scroll.To('section-menu', 250)}}>Menu</a></li>
+                        <li><a onClick={()=>{props.scroll.To('about', 50)}}>About</a></li>
                     </ul>
                 </div>
         );

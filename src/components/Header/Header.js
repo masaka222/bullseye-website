@@ -3,26 +3,24 @@ import HeadingPrimary from '../HeadingPrimary/HeadingPrimary';
 import Logo from '../Logo/Logo';
 import NavigationPrimary from '../NavigationPrimary/NavigationPrimary';
 
-class Header extends React.Component {
-
-    render(){
-        const logoClass = "header__logo";
-    
+const Header = (props) => {
+    const logoClass = "header__logo";
         return (
             <div>
                 <header className="header">
                 <div className = "header__logo-box">
                     <Logo logoClass = {logoClass}/>
                 </div>
-                    <NavigationPrimary />
+                    <NavigationPrimary 
+                        scroll = {props.scroll}
+                    />
                     <HeadingPrimary 
-                        headerHeading = {this.props.headerHeading}
-                        headerSubHeading = {this.props.headerSubHeading}
+                        headerHeading = {props.headerHeading}
+                        headerSubHeading = {props.headerSubHeading}
                     />
                 </header>
             </div>
         );
-    }
 }
         
 
