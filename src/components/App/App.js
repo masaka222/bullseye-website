@@ -8,10 +8,6 @@ import Footer from '../Footer/Footer';
 import NavigationSecondary from '../NavigationSecondary/NavigationSecondary';
 import MenuModal from '../MenuModal/MenuModal';
 
-/* Modal Images */
-import Burger1 from './Photo1.jpg';
-import Burger2 from './Photo3.jpg';
-
 class App extends React.Component {
 
     state = {
@@ -27,7 +23,6 @@ class App extends React.Component {
 
         /* Margin Bottom sizes for Secondary Heading*/
         const marginBottomSmall = "u-margin-bottom-small";
-        const marginBottomMedium = "u-margin-bottom-medium";
         const marginBottomBig = "u-margin-bottom-big";
 
         /* Headings */
@@ -167,8 +162,6 @@ class App extends React.Component {
                 <MenuModal
                     modalHeading    =   {this.state.modalHeading}
                     modalSubHeading =   {this.state.modalSubHeading}
-                    modalImage1     =   {this.state.modalImage1}
-                    modalImage2     =   {this.state.modalImage2}
                     modalMenu       =   {this.state.modalMenu}
                     handleClearModalProperties = {handleClearModalProperties}
                 />

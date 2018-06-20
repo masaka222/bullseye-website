@@ -30,15 +30,15 @@
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
-    display: table;
-    overflow: hidden;
 
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%) ;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
 }
 
 .modal__up{
@@ -54,13 +54,13 @@
 }
 
 .modal__text{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
       
-    -moz-column-count: 3;
+    -moz-column-count: 2;
     -moz-column-gap: 4rem;
     -moz-column-rule: 1px solid #777;
 
-    column-count: 3;
+    column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #777;
 
@@ -86,4 +86,15 @@
 .modal__close:hover{
     color: #BE2600;
     cursor: pointer;
+}
+
+/* Tablet portrait media */
+@media (max-width: 56.25em){    /* width < 900? */
+    .modal{
+        width: 85%;
+    }
+    .modal__text{
+        -moz-column-count: 1;
+        column-count: 1;      
+    }
 }
