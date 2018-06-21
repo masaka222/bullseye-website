@@ -1,18 +1,26 @@
 .section-reviews{
     background-color: #f7f7f7;
-    padding: 30rem 0 20rem 0;
+    padding: 35rem 0 20rem 0;
     margin-top: -20vh;
 }
 
 @media (max-width: 56.25em){
     .section-reviews{
-        padding: 30rem 0 15rem 0;
+        padding: 35rem 0 15rem 0;
     }
 }
 
 /* Phone media */ 
 @media (max-width: 37.5em){     /* width < 600? */ 
     .section-reviews{
-        padding: 30rem 0 10rem 0;
+        padding: 35rem 0 10rem 0;
+    }
+}
+
+/* IPad Pro Portrait */
+@media only screen 
+  and (orientation: portrait){
+    .section-reviews{
+        padding: 45rem 0 20rem 0;
     }
 }
