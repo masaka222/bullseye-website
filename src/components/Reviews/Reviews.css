@@ -24,3 +24,10 @@
         padding: 45rem 0 20rem 0;
     }
 }
+
+/* Big Desktop */
+@media (min-width: 112.5em){
+    .section-reviews{
+        padding: 55rem 0 30rem 0;
+    }
+}
