@@ -28,7 +28,7 @@ class App extends React.Component {
         /* Headings */
         const headerHeading = "Bullseye";
         const headerSubHeading = "Burger House";
-        const aboutHeading = "About Us";
+        const aboutHeading = "Our Story";
         const reviewsHeading = "What people think about us";
         const contactHeading = "Get in touch";
 

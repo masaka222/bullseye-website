@@ -13,7 +13,7 @@ const MenuModal = (props) => {
             overlayClassName = "modal__overlay"
         >
             <div className="modal__up">
-                <button onClick={props.handleClearModalProperties} className="modal__close">&times;</button>
+                <a onClick={props.handleClearModalProperties} className="modal__close">&times;</a>
                 <HeadingSecondary 
                     headingSecondary = {props.modalHeading}
                     headingMarginBottom = {'u-margin-bottom-small'}
