@@ -11,9 +11,10 @@
 .menu-box-link{
     color: #777;
     text-decoration: none;
+    transition: transform .3s;
 }
 
-.menu-box:hover{
+.menu-box-link:hover{
     transform: translateY(-1.5rem) scale(1.03);
     cursor: pointer;
 }

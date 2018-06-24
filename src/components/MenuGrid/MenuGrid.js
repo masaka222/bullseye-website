@@ -7,7 +7,7 @@ import {
     hotDogs, 
     tacos, 
     sideOrders
-} from '../../MenuVars'
+} from '../../MenuVars';
 
 const MenuGrid = (props) => {
         return (
