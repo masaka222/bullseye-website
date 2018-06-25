@@ -16,6 +16,7 @@ class App extends React.Component {
         modalImage1: undefined,
         modalImage2: undefined,
         modalMenu: undefined,
+        modalHeading2: undefined,
         checked: false
     };
 
@@ -46,11 +47,16 @@ class App extends React.Component {
         
 
         /*Functions*/
-        const setModalProperties = (item, subHeading, menu) => {
+        const setModalProperties = (item, subHeading, menu, item2, subHeading2, menu2, item3, menu3) => {
             this.setState(()=>({
                 modalHeading: item,
                 modalSubHeading: subHeading,
-                modalMenu: menu
+                modalMenu: menu,
+                modalHeading2: item2,
+                modalSubHeading2: subHeading2,
+                modalMenu2: menu2,
+                modalHeading3: item3,
+                modalMenu3: menu3
             }));
         }
 
@@ -58,9 +64,12 @@ class App extends React.Component {
             this.setState(()=>({
                 modalHeading: undefined,
                 modalSubHeading: undefined,
-                modalImage1: undefined,
-                modalImage2: undefined,
-                modalMenu: undefined
+                modalMenu: undefined,
+                modalHeading2: undefined,
+                modalSubHeading2: undefined,
+                modalMenu2: undefined,
+                modalHeading3: undefined,
+                modalMenu3: undefined
             }));
         }
 
@@ -163,6 +172,11 @@ class App extends React.Component {
                     modalHeading    =   {this.state.modalHeading}
                     modalSubHeading =   {this.state.modalSubHeading}
                     modalMenu       =   {this.state.modalMenu}
+                    modalHeading2   =   {this.state.modalHeading2}
+                    modalSubHeading2 =  {this.state.modalSubHeading2}
+                    modalMenu2      =   {this.state.modalMenu2}
+                    modalHeading3   =   {this.state.modalHeading3} 
+                    modalMenu3      =   {this.state.modalMenu3}
                     handleClearModalProperties = {handleClearModalProperties}
                 />
             </div>

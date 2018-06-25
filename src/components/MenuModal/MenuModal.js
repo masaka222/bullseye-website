@@ -20,6 +20,19 @@ const MenuModal = (props) => {
                 />
                 <p className = "heading-tertiary u-center-text u-margin-bottom-medium" style={{color: "#BE2600"}}> {props.modalSubHeading} </p>
                 {props.modalMenu}
+                <div className = "u-margin-bottom-small"/>
+                <HeadingSecondary 
+                    headingSecondary = {props.modalHeading2}
+                    headingMarginBottom = {'u-margin-bottom-small'}
+                />
+                <p className = "heading-tertiary u-center-text u-margin-bottom-medium" style={{color: "#BE2600"}}> {props.modalSubHeading2} </p>
+                {props.modalMenu2}
+                <div className = "u-margin-bottom-small"/>
+                <HeadingSecondary 
+                    headingSecondary = {props.modalHeading3}
+                    headingMarginBottom = {'u-margin-bottom-small'}
+                />
+                {props.modalMenu3}
             </div>
         </Modal>
     );

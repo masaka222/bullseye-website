@@ -2,14 +2,18 @@ import React from 'react';
 /* Variables for the Menu Modal */
         /* Burgers */
 export  const burgers = {
-            title: "Burgers",
-            subtitle: "All Double burgers 1/2lb of angus beef. Served on Brioche roll. All Burgers, except the Hamburger and the Cheeseburger, come with fries",
-            icon: "icofont-burger",
-            menu:  <div className="modal__text">
+            title:      "Burgers",
+            subtitle:   "All Double burgers 1/2lb of angus beef. Served on Brioche roll.",
+            icon:       "icofont-burger",
+            menu:       <div className="modal__text">
                             <p className = "heading-tertiary">Hamburger $4.75</p>
                             <p className = "heading-tertiary">Cheeseburger $5.75</p>
                             <p className = "heading-tertiary">Cheeseburger Platter $8.25</p>
                                 Served with Lettuce, Tomato, French Fries
+                        </div>,
+            title2:     "Gourmet Burgers",
+            subtitle2:   "All Gourmet Burgers served with french fries turkey or angus beef",
+            menu2:      <div className="modal__text">
                             <p className = "heading-tertiary">Breakfast Burger $8.95</p>
                                 Cheddar Cheese, Bacon, Fried Egg
                             <p className = "heading-tertiary">Blue Cheese Burger $8.95</p>
@@ -51,79 +55,86 @@ export  const burgers = {
 
         /* Salads */
 export  const salads = {
-            title: "Salads",
-            subtitle: "Choice of Dressing: French, Russian, Oil & Vinegar, Rasberry Vinaigrette, Honey Mustard, Creamy Italian, Ranch, Lemon, Caesar, Bleau Cheese, Light Italian or Balsamic",
-            icon: "icofont-fruits",
-            menu:  <div className="modal__text">
-                        <p className = "heading-tertiary">Plain Salad $6.20</p>
-                            With Eggs
-                        <p className = "heading-tertiary">Caesar Salad $5.90</p>
-                        <p className = "heading-tertiary">Club Salad $8.50</p>
-                            Grilled chicken with romaine lettuce, tomato, onions, shredded, mozzarella cheese topped with strips of bacon, marinated balsamic dressing
-                        <p className = "heading-tertiary">Apple Walnut Salad $8.50</p>
-                            Mixed lettuce, mozzarella cheese, walnuts, apple slices, carrots, red cabbage & grilled chicken
-                        <p className = "heading-tertiary">Spinach Chicken Salad $8.50</p>
-                            Baby spinach, grilled marinated chicken strips, sliced mashrooms, tomatoes, bacon, egg & onions
-                        <p className = "heading-tertiary">Crispy Chicken Salad $8.50</p>
-                        <p className = "heading-tertiary">Buffalo Bleu Salad $8.50</p>
-                            Mixed lettuce, chicken, hot sauce, tomatoes, , banana peppers & tortilla chips
-                        <p className = "heading-tertiary">Cobb Salad $8.50</p>
-                            Mixed lettuce, crispy chicken, tomatoes, avocado, chopped eggs, crispy bacon & crumbled bleu cheese
-                        <p className = "heading-tertiary">Mandarin Chicken Salad $8.50</p>
-                            Mixed lettuce, chicken, mandarin orange, sliced cucumbers, carrots & cranberries
-                        <p className = "heading-tertiary">Caesar Salad with Chicken $8.50</p>
-                            Chicken strips mixed with fresh lettuce, croutons, grated cheese and caesar dressing
-                        <p className = "heading-tertiary">Bull's Eye Salad $8.50</p>
-                            Crispy Cretan rusks with tomato, olives, parsley, feta cheese, oregano and greek dressing
-                        <p className = "heading-tertiary">Bacon & Cheese Salad $8.50</p>
-                            Fresh green salad with chopped bacon, monterray jack cheese, grated cheese, chopped tomato, corn & ranch dressing
-                    </div>
+            title:      "Salads",
+            subtitle:   "Choice of Dressing: French, Russian, Oil & Vinegar, Rasberry Vinaigrette, Honey Mustard, Creamy Italian, Ranch, Lemon, Caesar, Bleau Cheese, Light Italian or Balsamic",
+            icon:       "icofont-fruits",
+                menu:  <div className="modal__text">
+                            <p className = "heading-tertiary">Plain Salad $6.20</p>
+                                With Eggs
+                            <p className = "heading-tertiary">Caesar Salad $5.90</p>
+                            <p className = "heading-tertiary">Club Salad $8.50</p>
+                                Grilled chicken with romaine lettuce, tomato, onions, shredded, mozzarella cheese topped with strips of bacon, marinated balsamic dressing
+                            <p className = "heading-tertiary">Apple Walnut Salad $8.50</p>
+                                Mixed lettuce, mozzarella cheese, walnuts, apple slices, carrots, red cabbage & grilled chicken
+                            <p className = "heading-tertiary">Spinach Chicken Salad $8.50</p>
+                                Baby spinach, grilled marinated chicken strips, sliced mashrooms, tomatoes, bacon, egg & onions
+                            <p className = "heading-tertiary">Crispy Chicken Salad $8.50</p>
+                            <p className = "heading-tertiary">Buffalo Bleu Salad $8.50</p>
+                                Mixed lettuce, chicken, hot sauce, tomatoes, , banana peppers & tortilla chips
+                            <p className = "heading-tertiary">Cobb Salad $8.50</p>
+                                Mixed lettuce, crispy chicken, tomatoes, avocado, chopped eggs, crispy bacon & crumbled bleu cheese
+                            <p className = "heading-tertiary">Mandarin Chicken Salad $8.50</p>
+                                Mixed lettuce, chicken, mandarin orange, sliced cucumbers, carrots & cranberries
+                            <p className = "heading-tertiary">Caesar Salad with Chicken $8.50</p>
+                                Chicken strips mixed with fresh lettuce, croutons, grated cheese and caesar dressing
+                            <p className = "heading-tertiary">Bull's Eye Salad $8.50</p>
+                                Crispy Cretan rusks with tomato, olives, parsley, feta cheese, oregano and greek dressing
+                            <p className = "heading-tertiary">Bacon & Cheese Salad $8.50</p>
+                                Fresh green salad with chopped bacon, monterray jack cheese, grated cheese, chopped tomato, corn & ranch dressing
+                        </div>
         };
 
         /* Sandwiches */
 export  const sandwiches = {
-            title: "Sandwiches",
-            subtitle: "All $8.95 Sandwiches served with French Fries, Ciabatta or Tandoori Flat Bread. The $5.75 ones are served on a Brioche Bun and don't come with fries. Gyro sandwiches are on a Pita Bread and only the Platters come with fries",
-            icon: "icofont-sub-sandwich",
-            menu:   <div className="modal__text">
-                        <p className = "heading-tertiary">BBQ Chicken $8.95</p>
-                            BBQ Sauce, crispy onions, cheddar cheese, lettuce, tomato & mayonnaise
-                        <p className = "heading-tertiary">Teriyaki Chicken $8.95</p>
-                            Pineapple, swiss cheese, lettuce, tomato, mayonnaise & teriyaki sauce 
-                        <p className = "heading-tertiary">Guacamole Chicken $8.95</p>
-                            Guacamole, bacon, provolone, lettuce, tomato, pickles & mayonnaise
-                        <p className = "heading-tertiary">Grilled Chicken $8.95</p>
-                            Lettuce, tomato, red onions & pickles with roaster peppers, hot peppers, fried onions & cheddar cheese
-                        <p className = "heading-tertiary">Chipotle Chicken $8.95</p>
-                            Lettuce, tomato, red onions & chipotle sauce
-                        <p className = "heading-tertiary">Buffalo Chicken $8.95</p>
-                            Lettuce, tomato, red onions, buffalo sauce & crumbled blue cheese
-                        <p className = "heading-tertiary">Roma $8.95</p>
-                            Grilled chicken, spinach, roasted peppers mozzarella cheese and mayonnaise
-                        <p className = "heading-tertiary">Chicken Parmigiana $8.95</p>
-                        <p className = "heading-tertiary">Veggie $8.95</p>
-                            Mushrooms, spinach, roasted peppers and mozzarella cheese
-                        <p className = "heading-tertiary">Cubano $8.95</p>
-                            Ham, swiss cheese, sliced pickles and honey mustard
-                        <p className = "heading-tertiary">Chicken $8.95</p>
-                            Peppers, onions, pepper jack cheese with chipotle mayonnaise
-                        <p className = "heading-tertiary">Mediterranean Panini $8.95</p>
-                            Grilled Chicken breast, fresh spinach, tomatoes and feta cheese, served on panini bread
-                        <p className = "heading-tertiary">Grilled Chicken Caesar $5.75</p>
-                            Romaine lettuce, parmesan cheese & caesar dressing
-                        <p className = "heading-tertiary">Classic Chicken Golden $5.75</p>
-                            With Chicken fillet, bacon, tomato, lettuce, mayonnaise and grated cheese
-                        <p className = "heading-tertiary">Extreme Chick n' Crisp $5.75</p>
-                            Honey Mustard sauce with crispy chicken fillet, tomato & lettuce
-                        <p className = "heading-tertiary">Gyro Sandwich $5.60</p>
-                            with lettuce, tomatoes, onions & tzatziki sauce
-                        <p className = "heading-tertiary">Gyro Platter $7.65</p>
-                            with French Fries, Greek salad and tzatziki sauce
-                        <p className = "heading-tertiary">Chicken Gyro Sandwich $6.05</p>
-                            with lettuce, tomatoes, onions and tzatziki sauce
-                        <p className = "heading-tertiary">Chicken Gyro Platter $8.10</p>
-                            with French Fries, Greek salad and tzatziki sauce
-                    </div>
+            title:      "Sandwiches",
+            subtitle:   "Served with French Fries, Ciabatta or Tandoori Flat Bread",
+            icon:       "icofont-sub-sandwich",
+            menu:       <div className="modal__text">
+                            <p className = "heading-tertiary">BBQ Chicken $8.95</p>
+                                BBQ Sauce, crispy onions, cheddar cheese, lettuce, tomato & mayonnaise
+                            <p className = "heading-tertiary">Teriyaki Chicken $8.95</p>
+                                Pineapple, swiss cheese, lettuce, tomato, mayonnaise & teriyaki sauce 
+                            <p className = "heading-tertiary">Guacamole Chicken $8.95</p>
+                                Guacamole, bacon, provolone, lettuce, tomato, pickles & mayonnaise
+                            <p className = "heading-tertiary">Grilled Chicken $8.95</p>
+                                Lettuce, tomato, red onions & pickles with roaster peppers, hot peppers, fried onions & cheddar cheese
+                            <p className = "heading-tertiary">Chipotle Chicken $8.95</p>
+                                Lettuce, tomato, red onions & chipotle sauce
+                            <p className = "heading-tertiary">Buffalo Chicken $8.95</p>
+                                Lettuce, tomato, red onions, buffalo sauce & crumbled blue cheese
+                            <p className = "heading-tertiary">Roma $8.95</p>
+                                Grilled chicken, spinach, roasted peppers mozzarella cheese and mayonnaise
+                            <p className = "heading-tertiary">Chicken Parmigiana $8.95</p>
+                            <p className = "heading-tertiary">Veggie $8.95</p>
+                                Mushrooms, spinach, roasted peppers and mozzarella cheese
+                            <p className = "heading-tertiary">Cubano $8.95</p>
+                                Ham, swiss cheese, sliced pickles and honey mustard
+                            <p className = "heading-tertiary">Chicken $8.95</p>
+                                Peppers, onions, pepper jack cheese with chipotle mayonnaise
+                            <p className = "heading-tertiary">Mediterranean Panini $8.95</p>
+                                Grilled Chicken breast, fresh spinach, tomatoes and feta cheese, served on panini bread
+                        </div>,
+            title2:     "Brioche Roll Sandwiches",
+            menu2:      <div className="modal__text">
+                            <p className = "heading-tertiary">Grilled Chicken Caesar $5.75</p>
+                                Romaine lettuce, parmesan cheese & caesar dressing
+                            <p className = "heading-tertiary">Classic Chicken Golden $5.75</p>
+                                With Chicken fillet, bacon, tomato, lettuce, mayonnaise and grated cheese
+                            <p className = "heading-tertiary">Extreme Chick n' Crisp $5.75</p>
+                                Honey Mustard sauce with crispy chicken fillet, tomato & lettuce
+                        </div>,
+            title3:     "Gyro Sandwiches",
+            menu3:      <div className="modal__text">
+                            <p className = "heading-tertiary">Gyro Sandwich $5.60</p>
+                                with lettuce, tomatoes, onions & tzatziki sauce
+                            <p className = "heading-tertiary">Gyro Platter $7.65</p>
+                                with French Fries, Greek salad and tzatziki sauce
+                            <p className = "heading-tertiary">Chicken Gyro Sandwich $6.05</p>
+                                with lettuce, tomatoes, onions and tzatziki sauce
+                            <p className = "heading-tertiary">Chicken Gyro Platter $8.10</p>
+                                with French Fries, Greek salad and tzatziki sauce
+                        </div>
+
         };
 
 export  const hotDogs = {
