@@ -141,6 +141,18 @@
         }
     }
 
+    /* media query for 900px */
+    @media (width: 56.25em){
+        .navigation__button{
+            width: 7rem;
+            visibility: visible;
+        }
+        .navigation__background{
+            width: 6rem;
+            visibility: visible;
+        }
+    }
+
     @media (max-width: 37.5em){
         .navigation__button{
             top: 3rem;
