@@ -30,6 +30,9 @@
         left: 2rem;
     }
     .header__logo{
-        height: 15rem;
+        height: 12rem;
+    }
+    .footer__logo{
+        width: 13rem;
     }
 }

@@ -145,10 +145,16 @@
         .navigation__button{
             top: 3rem;
             right: 3rem;
+            height: 6rem;
+            width: 6rem;
         }
         .navigation__background{
             top: 3.5rem;
             right: 3.5rem;
-           
+            height: 5rem;
+            width: 5rem;
+        }
+        .navigation__icon{
+            margin-top: 3rem;
         }
     }
