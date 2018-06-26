@@ -23,7 +23,7 @@
 }
 
 /* Phone media */
-@media (max-width: 37.5em) and (width: 37.5em){     /* width <= 600? */
+@media (max-width: 37.5em){     /* width <= 600? */
     .heading-secondary{
         font-size: 2.5rem;
     }

@@ -43,7 +43,6 @@
 
 .modal__up{
     width: 100%;
-    display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
 }
@@ -72,7 +71,7 @@
 
 .modal__close{
     color: #777;
-    float: right;
+    position: absolute;
     top: 2.5rem;
     right: 2.5rem;
     font-size: 3rem;
@@ -93,6 +92,7 @@
         width: 85%;
     }
     .modal__text{
+        font-size: 1.7rem;
         -moz-column-count: 1;
         column-count: 1;      
     }
