@@ -4,7 +4,10 @@ const Review = (props) => {
         return (
             <div className="review">
                 <figure className="review__shape">
-                    <img src="#" alt=""className="review__img"/>
+                    <img src={props.reviewImage} alt="" className="review__img"/>
+                    <figcaption className="review__caption">
+                        {props.reviewName}
+                    </figcaption>
                 </figure>
                 <div className="review__text">
                     <h3 className="heading-tertiary u-margin-bottom-medium">{props.reviewHeading}</h3>

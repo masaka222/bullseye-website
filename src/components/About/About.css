@@ -4,6 +4,14 @@
     margin-top: -20vh;
 }
 
+/* Portrait Screens */
+@media only screen 
+  and (orientation: portrait){
+    .section-about{
+        padding: 35rem 0 25rem 0;
+    }
+}
+
 /* Tablet portrait media */
 @media (max-width: 56.25em){    /* width < 900? */
     .section-about{
@@ -11,11 +19,10 @@
     }
 }
 
-/* Portrait Screens */
-@media only screen 
-  and (orientation: portrait){
+/* Phone media */ 
+@media (max-width: 37.5em){     /* width < 600? */ 
     .section-about{
-        padding: 35rem 0 25rem 0;
+        padding: 20rem 0 25rem 0;
     }
 }
 
