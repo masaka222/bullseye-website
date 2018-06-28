@@ -27,8 +27,13 @@
         background-size: cover;
         background-position: top;
         transform: skewY(7deg);
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
+}
+
+@supports(background-attachment: fixed){
+        .section-menu::before{
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+        }
 }
 
 .section-menu > * {

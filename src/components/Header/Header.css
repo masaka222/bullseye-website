@@ -8,10 +8,6 @@
     background-size: cover;
     background-position: top;
     position: relative;
-
-    /*These 2 keep the image fixed in place*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* Resolution */
@@ -35,6 +31,14 @@
         height: 95vh;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
+}
+
+@supports(background-attachment: fixed){
+    .header{
+        /*These 2 keep the image fixed in place*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
