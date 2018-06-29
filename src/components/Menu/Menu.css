@@ -1,4 +1,4 @@
-.section-menu{
+.section-menu{/*
         padding: 20rem 0;
         margin-top: -10rem;
         position: relative;
@@ -8,9 +8,20 @@
         /*
         margin-top: -12rem;
         clip-path: polygon(0 15%, 100% 0, 100% 85vh, 0 100%);*/
+
+        position: relative;
+        padding: 25vh 10%;
+        min-height: 80vh;
+        box-sizing: border-box;
+        transform-style: inherit;
+        
 }
 
-.section-menu::before{
+.section-menu, .section-menu::before {
+        background: 50% 50% / cover;  
+}
+
+.section-menu::before{/*
         padding: 20rem 0;
         margin-top: -30rem;
         content: "";
@@ -27,35 +38,42 @@
         background-size: cover;
         background-position: top;
         transform: skewY(7deg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;*/
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(
+        to right bottom,
+        rgba(250, 0, 0, 0.36), 
+        rgba(250, 0, 0, 0.36)), 
+        url("./MenuBackground@0,2x.jpg");  
 }
 
-@supports(background-attachment: fixed){
-        .section-menu::before{
-                background-repeat: no-repeat;
-                background-attachment: fixed; 
-        }
-}
 
-.section-menu > * {
-    transform: skewY(7deg);
+.section-menu > * {/*
+    transform: skewY(7deg);*/
 }
 
 /* Tablet portrait media */
 @media (max-width: 56.25em){    /* width < 900? */
-        .section-menu{
-                padding: 10rem 0;
+        .section-menu{/*
+                padding: 10rem 0;*/
         }
 }
 
 /*Big Desktop*/
-@media (min-width: 112.5em){
+@media (min-width: 112.5em){/*
         .section-menu{
                 padding: 40rem 0;
                 margin-top: -20rem;
         }
         .section-menu::before{
                 transform: skewY(3deg);
-        }
+        }*/
 }
 
 /* Resolution */

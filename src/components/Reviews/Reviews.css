@@ -1,34 +1,36 @@
 .section-reviews{
     background-color: #f7f7f7;
+    /*
     padding: 35rem 0 20rem 0;
-    margin-top: -20vh;
+    margin-top: -20vh;*/
+    padding: 20vh 0 30vh 0;
 }
 
 /* Portrait Screens */
 @media only screen 
   and (orientation: portrait){
-    .section-reviews{
-        padding: 45rem 0 20rem 0;
+    .section-reviews{/*
+        padding: 45rem 0 20rem 0;*/
     }
 }
 
 /* Tablet portrait media */
 @media (max-width: 56.25em){
-    .section-reviews{
-        padding: 35rem 0 15rem 0;
+    .section-reviews{/*
+        padding: 35rem 0 15rem 0;*/
     }
 }
 
 /* Phone media */ 
 @media (max-width: 37.5em){     /* width < 600? */ 
-    .section-reviews{
-        padding: 25rem 0 10rem 0;
+    .section-reviews{/*
+        padding: 25rem 0 10rem 0;*/
     }
 }
 
 /* Big Desktop */
 @media (min-width: 112.5em){
-    .section-reviews{
-        padding: 55rem 0 30rem 0;
+    .section-reviews{/*
+        padding: 55rem 0 30rem 0;*/
     }
 }

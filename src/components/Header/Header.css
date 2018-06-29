@@ -1,5 +1,6 @@
-.header{
-    height: 85vh;
+.header{/*
+    height: 85vh;*/
+    height: 90vh;
     background-image: linear-gradient(
         to right bottom,
         rgba(250, 0, 0, 0.36), 
@@ -8,6 +9,9 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    /*These 2 keep the image fixed in place
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
 }
 
 /* Resolution */
@@ -27,34 +31,26 @@
 
 
 @supports( clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%) ) or (-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) {
-    .header{
+    .header{/*
         height: 95vh;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    }
-}
-
-@supports(background-attachment: fixed){
-    .header{
-        /*These 2 keep the image fixed in place*/
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
     }
 }
 
 /* Phone media */ 
 @media (max-width: 37.5em){     /* width < 600? */ 
-    .header{
+    .header{/*
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);*/
     }
 }
 
 /* IPad Pro Portrait */
 @media only screen 
   and (orientation: portrait){
-    .header{
+    .header{/*
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);*/
     }
 }
