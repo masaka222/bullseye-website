@@ -22,11 +22,13 @@
     outline-offset: 1.5rem;
 }
 
-.composition__photo:hover{
-    outline: 1.5rem solid #BE2600;
-    transform: scale(1.05) translateY(-.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
-    z-index: 11;
+@media (-moz-touch-enabled: 0), (pointer:fine) {
+    .composition__photo:hover{
+        outline: 1.5rem solid #BE2600;
+        transform: scale(1.05) translateY(-.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
+        z-index: 11;
+    }
 }
 
 .composition__photo--p1{
@@ -44,8 +46,10 @@
     top: 10rem;
 }
 
-.composition:hover .composition__photo:not(:hover){
-    transform: scale(0.95);
+@media (-moz-touch-enabled: 0), (pointer:fine) {
+    .composition:hover .composition__photo:not(:hover){
+        transform: scale(0.95);
+    }
 }
 
 /* Tablet portrait media */

@@ -1,8 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Photo1 from './Photo1.jpg';
-import Photo2 from './Photo2.JPG';
-import Photo3 from './Photo3.jpg';
+import Photo1 from './Photo1@0,5x.jpg';
+import Photo2 from './Photo2@0,5x.jpg';
+import Photo3 from './Photo3@0,5x.jpg';
 
 const AboutGrid = () => {
         return (

@@ -24,6 +24,22 @@
     }
 }
 
+/* Phone and landscape*/
+@media (max-width: 56.25em) and
+(orientation: landscape){
+    .header__logo-box{
+        top: 2rem;
+        left: 2rem;
+    }
+    .header__logo{
+        height: 12rem;
+    }
+    .footer__logo{
+        width: 13rem;
+    }
+}
+
+/* Phone */
 @media (max-width: 37.5em){
     .header__logo-box{
         top: 2rem;

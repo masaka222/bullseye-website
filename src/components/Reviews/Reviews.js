@@ -7,13 +7,11 @@ import reviewImage1 from './reviewImage1.jpg';
 import reviewImage2 from './reviewImage2.jpg';
 
 const Reviews = (props) => {
-    const headingId = "reviews"
         return (
             <div>
                 <section className="section-reviews" id="section-reviews">
                     <HeadingSecondary 
                         headingSecondary = {props.reviewsHeading}
-                        headingId = {headingId}
                         headingMarginBottom = {props.headingMarginBottom}
                     />
                     <div className="row">

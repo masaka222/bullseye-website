@@ -15,9 +15,11 @@
     transition: transform .3s;
 }
 
-.menu-box-link:hover{
-    transform: translateY(-1.5rem) scale(1.03);
-    cursor: pointer;
+@media (-moz-touch-enabled: 0), (pointer:fine) {
+    .menu-box-link:hover{
+        transform: translateY(-1.5rem) scale(1.03);
+        cursor: pointer;
+    }
 }
 
 

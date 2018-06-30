@@ -9,9 +9,9 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    /*These 2 keep the image fixed in place
+    /*These 2 keep the image fixed in place*/
     background-repeat: no-repeat;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
 }
 
 /* Resolution */
@@ -29,28 +29,8 @@
         }
 }
 
-
-@supports( clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%) ) or (-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) {
-    .header{/*
-        height: 95vh;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
-    }
-}
-
-/* Phone media */ 
-@media (max-width: 37.5em){     /* width < 600? */ 
-    .header{/*
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);*/
-    }
-}
-
-/* IPad Pro Portrait */
-@media only screen 
-  and (orientation: portrait){
-    .header{/*
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);*/
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+    .header{
+        background-attachment: scroll;
     }
 }

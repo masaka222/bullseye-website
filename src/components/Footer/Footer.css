@@ -36,7 +36,14 @@
     transition: all .2s;
 }
 
-.footer__link:hover,
+@media (-moz-touch-enabled: 0), (pointer:fine) {
+    .footer__link:hover{
+        color: #DD2C00;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+        transform: rotate(5deg) scale(1.3);
+    }
+}
+
 .footer__link:active{
     color: #DD2C00;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);

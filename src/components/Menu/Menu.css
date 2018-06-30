@@ -1,14 +1,4 @@
-.section-menu{/*
-        padding: 20rem 0;
-        margin-top: -10rem;
-        position: relative;
-        overflow: hidden;  
-    
-        transform: skewY(-7deg);
-        /*
-        margin-top: -12rem;
-        clip-path: polygon(0 15%, 100% 0, 100% 85vh, 0 100%);*/
-
+.section-menu{
         position: relative;
         padding: 25vh 10%;
         min-height: 80vh;
@@ -40,6 +30,7 @@
         transform: skewY(7deg);
         background-repeat: no-repeat;
         background-attachment: fixed;*/
+        
         content: "";
         position: absolute;
         top: 0;
@@ -50,30 +41,11 @@
         to right bottom,
         rgba(250, 0, 0, 0.36), 
         rgba(250, 0, 0, 0.36)), 
-        url("./MenuBackground@0,2x.jpg");  
-}
-
-
-.section-menu > * {/*
-    transform: skewY(7deg);*/
-}
-
-/* Tablet portrait media */
-@media (max-width: 56.25em){    /* width < 900? */
-        .section-menu{/*
-                padding: 10rem 0;*/
-        }
-}
-
-/*Big Desktop*/
-@media (min-width: 112.5em){/*
-        .section-menu{
-                padding: 40rem 0;
-                margin-top: -20rem;
-        }
-        .section-menu::before{
-                transform: skewY(3deg);
-        }*/
+        url("./MenuBackground@0,2x.jpg"); 
+        background-size: cover;
+        background-position: top;
+        transform: skewY(0deg);
+        background-attachment: fixed;
 }
 
 /* Resolution */
@@ -88,5 +60,11 @@
                 rgba(250, 0, 0, 0.36), 
                 rgba(250, 0, 0, 0.36)), 
                 url("./MenuBackground@0,33x.jpg");
+        }
+}
+
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+        .section-menu::before{
+            background-attachment: scroll;
         }
 }

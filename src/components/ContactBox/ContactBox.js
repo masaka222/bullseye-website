@@ -60,11 +60,10 @@ const ContactBox = (props) => {
                                     headingMarginBottom = {props.headingMarginBottom}
                                 />
                                 <p className = "contact-box__paragraph">
-                                    We’d be delighted to hear from you or answer any questions 
-                                    you may have. To contact us, please send a message to 
-                                    <strong style = {{color: '#DD2C00'}}> bullseyeburgerhouse@gmail.com </strong> 
-                                    or contact our facebook page, and our management 
-                                    team will reply promptly.
+                                        We’d be delighted to hear from you or answer any questions 
+                                        you may have. To contact us, please send a message to 
+                                        our facebook page, and our management 
+                                        team will reply promptly.
                                 </p>
                                 <br/>
                                 <br/>

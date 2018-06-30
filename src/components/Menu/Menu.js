@@ -43,7 +43,7 @@ class Menu extends React.Component {
         }
             return (
                 <div>
-                    <section className="section-menu slide" id="section-menu">
+                    <section className="section-menu" id="section-menu">
                     <Waypoint
                             onEnter={animateCardIn}
                     />

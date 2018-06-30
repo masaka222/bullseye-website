@@ -72,7 +72,14 @@
         transition: all .4s;
     }
 
-    .navigation__link:hover,
+    @media (-moz-touch-enabled: 0), (pointer:fine) {
+        .navigation__link:hover{
+            background-position: 100%;
+            color: #BE2600;
+            transform: translateX(1rem);
+        }
+    }
+    
     .navigation__link:active{
         background-position: 100%;
         color: #BE2600;
@@ -151,6 +158,26 @@
             visibility: visible;
         }
     }
+
+    /*Phone and landscape*/
+    @media (max-width: 56.25em) and
+    (orientation: landscape){
+        .navigation__button{
+                top: 3rem;
+                right: 3rem;
+                height: 6rem;
+                width: 6rem;
+            }
+            .navigation__background{
+                top: 3.5rem;
+                right: 3.5rem;
+                height: 5rem;
+                width: 5rem;
+            }
+            .navigation__icon{
+                margin-top: 3rem;
+            }
+}
 
     @media (max-width: 37.5em){
         .navigation__button{

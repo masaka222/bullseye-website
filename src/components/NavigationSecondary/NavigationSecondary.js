@@ -18,9 +18,9 @@ const NavigationSecondary = (props) => {
 
                 <nav className = "navigation__nav">
                     <ul className = "navigation__list">
-                        <li className="navigation__item"><a onClick={()=>{scrollAndManageCheckBox('about', 200)}} className="navigation__link">About</a></li>
+                        <li className="navigation__item"><a onClick={()=>{scrollAndManageCheckBox('section-about', 200)}} className="navigation__link">About</a></li>
                         <li className="navigation__item"><a onClick={()=>{scrollAndManageCheckBox('section-menu', 200)}} className="navigation__link">Menu</a></li>
-                        <li className="navigation__item"><a onClick={()=>{scrollAndManageCheckBox('reviews', 200)}} className="navigation__link">Reviews</a></li>
+                        <li className="navigation__item"><a onClick={()=>{scrollAndManageCheckBox('section-reviews', 200)}} className="navigation__link">Reviews</a></li>
                         <li className="navigation__item"><a onClick={()=>{scrollAndManageCheckBox('section-contact', 200)}} className="navigation__link">Contact</a></li>
                     </ul>
                 </nav>

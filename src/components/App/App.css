@@ -25,6 +25,7 @@ body{
     /*font-size: 1.6rem;*/
     line-height: 1.7;
     color: #777;
+    background-color: #f7f7f7;
     padding: 3rem;
 }
 
@@ -40,10 +41,6 @@ body{
 @media (max-width: 75em){   /* width < 1200? */
     html{
         font-size: 56.25%;  /* 1rem = 9px; 9px/16px = 62.5% */
-    }
-    
-    body{
-        
     }
 }
 
