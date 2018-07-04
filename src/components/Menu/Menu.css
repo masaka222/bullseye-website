@@ -43,8 +43,8 @@
         rgba(250, 0, 0, 0.36)), 
         url("./MenuBackground@0,2x.jpg"); 
         background-size: cover;
-        background-position: top;
-        transform: skewY(0deg);
+        background-position: top;/*
+        transform: skewY(0deg);*/
         background-attachment: fixed;
 }
 
