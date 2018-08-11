@@ -29,6 +29,11 @@ body{
     padding: 3rem;
 }
 
+::selection{
+    background-color: #DD2C00;
+    color: #f7f7f7
+}
+
 
 /* --------- MEDIA --------- 
     Phone:    600px    =   37.5em

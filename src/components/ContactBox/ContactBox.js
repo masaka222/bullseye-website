@@ -1,14 +1,16 @@
 import React from 'react';
 import HeadingSecondary from '../HeadingSecondary/HeadingSecondary';
 import Map from '../Map/Map';
+/*
 import {
     withGoogleMap,
     GoogleMap,
     Marker,
-  } from "react-google-maps";
+  } from "react-google-maps";*/
 import Media from "react-media";
 
 const ContactBox = (props) => {
+    
         return (
             <div>
                 <Media query="(max-width: 56.25em)">
@@ -37,7 +39,7 @@ const ContactBox = (props) => {
                                 </div>
                                 <div className="col-1-of-2" >
                                     <Map
-                                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUx0QmETQ4igl3eH4LgNMYZR5iFrobbjo&callback=initMap"
+                                        googleMapURL={"https://maps.googleapis.com/maps/api/js?key=AIzaSyBUx0QmETQ4igl3eH4LgNMYZR5iFrobbjo"}
                                         loadingElement={<div style={{ height: `100%` }} />}
                                         containerElement={<div style={{ height: `40rem` }} />}
                                         mapElement={<div style={{ height: `100%` }} />}
@@ -48,7 +50,7 @@ const ContactBox = (props) => {
                             <div className = "contact-box row">
                             <div className="col-1-of-2">
                                 <Map
-                                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUx0QmETQ4igl3eH4LgNMYZR5iFrobbjo&callback=initMap"
+                                    googleMapURL={"https://maps.googleapis.com/maps/api/js?key=AIzaSyBUx0QmETQ4igl3eH4LgNMYZR5iFrobbjo"}
                                     loadingElement={<div style={{ height: `100%` }} />}
                                     containerElement={<div style={{ height: `50rem` }} />}
                                     mapElement={<div style={{ height: `100%` }} />}

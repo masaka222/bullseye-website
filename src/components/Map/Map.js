@@ -6,7 +6,7 @@ import {
     Marker,
   } from "react-google-maps";
 
-const Map = (props) => {
+const Map = () => {
     return (
             <GoogleMap
                 defaultZoom={17}
