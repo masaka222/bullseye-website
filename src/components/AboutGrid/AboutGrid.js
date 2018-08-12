@@ -12,7 +12,7 @@ const AboutGrid = () => {
                     <h3 className="heading-tertiary u-margin-bottom-medium">Our love for a good burger brought us to Glenside</h3>
                     <p className="paragraph">
                         Ever imagined of a homemade burger with pure ingredients, two delicious Angus patties,
-                        amazing sauces and all that on a fresh Brioch Bun, only one call away from your home?
+                        amazing sauces, and all that on a fresh Brioch Bun, only one call away from home?
                         Bullseye Burger House is all that and more.  
                         Being in the food industry for over 30 years, we gathered all the knowledge and experience
                         we got and implemented it into our burger. Now it's time for Glenside to taste it!
