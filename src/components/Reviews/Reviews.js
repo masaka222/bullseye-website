@@ -30,7 +30,7 @@ const Reviews = (props) => {
                             reviewHeading = {props.review2heading}
                             reviewText = {props.review2text}
                             reviewImage = {reviewImage2}
-                            reviewName = "Clare Barbone"
+                            reviewName = "Chris Sandy"
                         />
                     </Zoom>
                     </div>

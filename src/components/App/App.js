@@ -39,8 +39,8 @@ class App extends React.Component {
         
 
         /* Variables for Review #2 */
-        const review2heading = "The guacamole chicken sandwich is so good I haven't tried anything else yet!";
-        const review2text = "Bullseye only opened a couple months ago and I've already eaten here 4 times! I keep ordering the guacamole chicken sandwich, it is so good I haven't tried anything else yet! & The fries have been perfect every time!";
+        const review2heading = "Perfect combo of burger and bun";
+        const review2text = "Perfect combo of Burger and Bun. Loved my Cheeseburger. New favorite Burger place for me!";
         
 
         const reviewslink = "https://www.facebook.com/pg/bullseyeburgerhouse/reviews/?ref=page_internal";
