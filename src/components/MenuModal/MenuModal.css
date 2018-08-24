@@ -71,7 +71,9 @@
 
 .modal__close{
     color: #777;
-    position: absolute;
+    position: sticky;
+    position: -webkit-sticky;
+    float: right;
     top: 2.5rem;
     right: 2.5rem;
     font-size: 3rem;
@@ -96,4 +98,5 @@
         -moz-column-count: 1;
         column-count: 1;      
     }
+    
 }

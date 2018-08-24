@@ -13,12 +13,17 @@ const MenuModal = (props) => {
             overlayClassName = "modal__overlay"
         >
             <div className="modal__up">
-                <a onClick={props.handleClearModalProperties} className="modal__close">&times;</a>
+                <a onClick={props.handleClearModalProperties} className="modal__close">
+                    &times;
+                </a>
                 <HeadingSecondary 
                     headingSecondary = {props.modalHeading}
                     headingMarginBottom = {'u-margin-bottom-small'}
                 />
-                <p className = "heading-tertiary u-center-text u-margin-bottom-medium" style={{color: "#BE2600"}}> {props.modalSubHeading} </p>
+                <p className = "heading-tertiary u-center-text u-margin-bottom-medium" style={{color: "#BE2600"}}> 
+                    {props.modalSubHeading} 
+                </p>
+
                 {props.modalMenu}
 
                 {/*If there is a second Heading passed */
