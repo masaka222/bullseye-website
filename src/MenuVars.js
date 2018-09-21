@@ -20,16 +20,16 @@ export  const burgers = {
                                 Lettuce, Tomato, Crumbled Blue Cheese, Cheddar Cheese & Crispy Onions
                             <p className = "heading-tertiary">BBQ Burger $8.95</p>
                                 BBQ Sauce, Crispy Onions, Cheddar Cheese, Lettuce, Tomato & Mayonnaise
-                            <p className = "heading-tertiary">Cuban Burger $8.95</p>
-                                Ham, Swiss Cheese, Pickles, Mustard & Mayonnaise
+                            <p className = "heading-tertiary">Bullseye Burger $8.95</p>
+                                Garlic, Double Bacon, Lettuce, Tomato, Caesar's sauce, Parmesan 
                             <p className = "heading-tertiary">House Classic Burger $8.95</p>
                                 American Cheese, Lettuce, Tomato & Red Onions 
                             <p className = "heading-tertiary">Jalapeño Burger $8.95</p>
                                 Chipotle Ranch, Jalapeño, Lettuce, Tomato & Red Onions
                             <p className = "heading-tertiary">Guacamole Burger $8.95</p>
                                 Cheddar Cheese, Lettuce, Tomato, Red Onions, Chipotle Ranch
-                            <p className = "heading-tertiary">Mighty Greek Burger $8.95</p>
-                                Feta Cheese, Lettuce, Tomato & Red Raw Onions
+                            <p className = "heading-tertiary">Avocado Burger $8.95</p>
+                                Lettuce, Tomato, Onion & Avocado
                             <p className = "heading-tertiary">Buffalo Burger $8.95</p>
                                 1/4 Pound Burger Topped with Crispy Chicken Tenders, Tossed in Our Buffalo Wing Sauce, Blue Cheese & Crispy Onions on a Burger Bun
                             <p className = "heading-tertiary">The South Philly Burger $8.95</p>
@@ -48,6 +48,8 @@ export  const burgers = {
                                 With Bacon, Lettuce, Mayo Yogurt Sauce, Nachos, Melted Cheddar Cheese And Caramelized Onions With Jalapeño And Pineapple
                             <p className = "heading-tertiary">Chili $8.95</p>
                                 With Cheeese, Tomato, Lettuce, Pickles, Spicy Chili Sauce And Mayonnaise
+                            <p className = "heading-tertiary">Pizza Burger $8.95</p>
+                                Pizza Sauce & Mozzarella Cheese
                             <p className = "heading-tertiary">Special Burger $8.95</p>
                                 2 Patties of 100% Angus Beef on Ciabatta Bread with Melted Swiss Cheese, Tomatoes, Mayo, How Peppers & Pineapple 
                         </div>
@@ -62,6 +64,7 @@ export  const salads = {
                             <p className = "heading-tertiary">Plain Salad $6.20</p>
                                 With Eggs
                             <p className = "heading-tertiary">Caesar Salad $5.90</p>
+                            <p className = "heading-tertiary">Tuna Salad $8.50</p>
                             <p className = "heading-tertiary">Club Salad $8.50</p>
                                 Grilled chicken with romaine lettuce, tomato, onions, shredded, mozzarella cheese topped with strips of bacon, marinated balsamic dressing
                             <p className = "heading-tertiary">Apple Walnut Salad $8.50</p>
@@ -75,10 +78,10 @@ export  const salads = {
                                 Mixed lettuce, crispy chicken, tomatoes, avocado, chopped eggs, crispy bacon & crumbled bleu cheese
                             <p className = "heading-tertiary">Mandarin Chicken Salad $8.50</p>
                                 Mixed lettuce, chicken, mandarin orange, sliced cucumbers, carrots & cranberries
+                            <p className = "heading-tertiary">Greek Salad $8.50</p>
+                                Tomatoes, Onions, Green Peppers, Cucumbers & Feta Cheese
                             <p className = "heading-tertiary">Caesar Salad with Chicken $8.50</p>
                                 Chicken strips mixed with fresh lettuce, croutons, grated cheese and caesar dressing
-                            <p className = "heading-tertiary">Bull's Eye Salad $8.50</p>
-                                Crispy Cretan rusks with tomato, olives, parsley, feta cheese, oregano and greek dressing
                             <p className = "heading-tertiary">Bacon & Cheese Salad $8.50</p>
                                 Fresh green salad with chopped bacon, monterray jack cheese, grated cheese, chopped tomato, corn & ranch dressing
                         </div>
@@ -104,15 +107,13 @@ export  const sandwiches = {
                                 Lettuce, tomato, red onions, buffalo sauce & crumbled blue cheese
                             <p className = "heading-tertiary">Roma $8.95</p>
                                 Grilled chicken, spinach, roasted peppers mozzarella cheese and mayonnaise
-                            <p className = "heading-tertiary">Chicken Parmigiana $8.95</p>
                             <p className = "heading-tertiary">Veggie $8.95</p>
                                 Mushrooms, spinach, roasted peppers and mozzarella cheese
-                            <p className = "heading-tertiary">Cubano $8.95</p>
-                                Ham, swiss cheese, sliced pickles and honey mustard
-                            <p className = "heading-tertiary">Chicken $8.95</p>
-                                Peppers, onions, pepper jack cheese with chipotle mayonnaise
                             <p className = "heading-tertiary">Mediterranean Panini $8.95</p>
                                 Grilled Chicken breast, fresh spinach, tomatoes and feta cheese, served on panini bread
+                            <p className = "heading-tertiary">Avocado Panini $8.95</p>
+                                Bacon, Lettuce, Tomato & Avocado
+                            
                         </div>,
             title2:     "Brioche Roll Sandwiches",
             menu2:      <div className="modal__text">
@@ -125,13 +126,13 @@ export  const sandwiches = {
                         </div>,
             title3:     "Gyro Sandwiches",
             menu3:      <div className="modal__text">
-                            <p className = "heading-tertiary">Gyro Sandwich $5.60</p>
+                            <p className = "heading-tertiary">Gyro Sandwich $6.50</p>
                                 with lettuce, tomatoes, onions & tzatziki sauce
-                            <p className = "heading-tertiary">Gyro Platter $7.65</p>
+                            <p className = "heading-tertiary">Gyro Platter $8.95</p>
                                 with French Fries, Greek salad and tzatziki sauce
-                            <p className = "heading-tertiary">Chicken Gyro Sandwich $6.05</p>
+                            <p className = "heading-tertiary">Chicken Gyro Sandwich $6.50</p>
                                 with lettuce, tomatoes, onions and tzatziki sauce
-                            <p className = "heading-tertiary">Chicken Gyro Platter $8.10</p>
+                            <p className = "heading-tertiary">Chicken Gyro Platter $8.95</p>
                                 with French Fries, Greek salad and tzatziki sauce
                         </div>
 
@@ -148,14 +149,10 @@ export  const hotDogs = {
                             Chipotle sauce, swiss cheese and sauer kraut
                         <p className = "heading-tertiary">Chilli Cheese Dog $3.95</p>
                             Sriracha sauce and cheese Whiz
-                        <p className = "heading-tertiary">Devil Dog $3.95</p>
-                            Blue Cheese and Hot Sauce
                         <p className = "heading-tertiary">Texas Dog $3.95</p>
                             Bacon wrapped, fried onions and cheese whiz
                         <p className = "heading-tertiary">BBQ Dog $3.95</p>
                             BBQ sauce, bacon and cheddar cheese
-                        <p className = "heading-tertiary">Greek Dog $3.95</p>
-                            Lettuce, tomato and crumbled feta cheese
                         <p className = "heading-tertiary">Philly Dog $3.95</p>
                             Philadelphia creamy cheese, bacon, lettuce and tomatoes
                     </div>
@@ -170,16 +167,15 @@ export  const tacos = {
                             Ground Veef - Carne Molida
                         <p className = "heading-tertiary">Chopped Chicken Tacos $8.00</p>
                             Trozos de Pollo al Grill
-                        <p className = "heading-tertiary">Italian Sausage Tacos $8.00</p>
-                            Chorizo Italiano
+                        <p className = "heading-tertiary">Chorizo Tacos $8.00</p>
                         <p className = "heading-tertiary">Bullseye Tacos $8.50</p>
-                            Combination of Beef, Chicken and Italian sausage
+                            Combination of Beef, Chicken and Chorizo
+                        <p className = "heading-tertiary">Gyro Taco $8.50</p>
+                            Lettuce, Tomato & Tzatziki sauce
                         <p className = "heading-tertiary">Shrimp Tacos $9.00</p>
                             Grilled Shrimp with roasted red peppers, lettuce, Mexican cheese and fresh slices of avocado
-                        <p className = "heading-tertiary">Veggie Tacos $8.00</p>
-                            Red pepper, onions, corn, jalapeños, cheese, lettuce, spinach and avocado sour cream
-                        <p className = "heading-tertiary">Chopped Flounder Breaded $9.00</p>
-                            Red pepper, onions, corn, jalapeños, cheese, lettuce, spinach and avocado sour cream
+                        <p className = "heading-tertiary">Supreme $9.00</p>
+                            Beef, Lettuce, Tomato, Cheese & Corn
                     </div>
         };
 
