@@ -6,51 +6,51 @@ export  const burgers = {
             subtitle:   "All Double burgers 1/2lb of angus beef. Served on Brioche roll.",
             icon:       "icofont-burger",
             menu:       <div className="modal__text">
-                            <p className = "heading-tertiary">Hamburger $4.75</p>
-                            <p className = "heading-tertiary">Cheeseburger $5.75</p>
-                            <p className = "heading-tertiary">Cheeseburger Platter $8.25</p>
+                            <p className = "heading-tertiary">Hamburger $7.25</p>
+                            <p className = "heading-tertiary">Cheeseburger $8.25</p>
+                            <p className = "heading-tertiary">Cheeseburger Platter $10.75</p>
                                 Served with Lettuce, Tomato, French Fries
                         </div>,
             title2:     "Gourmet Burgers",
             subtitle2:   "All Gourmet Burgers served with french fries turkey or angus beef",
             menu2:      <div className="modal__text">
-                            <p className = "heading-tertiary">Breakfast Burger $8.95</p>
+                            <p className = "heading-tertiary">Breakfast Burger $11.45</p>
                                 Cheddar Cheese, Bacon, Fried Egg
-                            <p className = "heading-tertiary">Blue Cheese Burger $8.95</p>
+                            <p className = "heading-tertiary">Blue Cheese Burger $11.45</p>
                                 Lettuce, Tomato, Crumbled Blue Cheese, Cheddar Cheese & Crispy Onions
-                            <p className = "heading-tertiary">BBQ Burger $8.95</p>
+                            <p className = "heading-tertiary">BBQ Burger $11.45</p>
                                 BBQ Sauce, Crispy Onions, Cheddar Cheese, Lettuce, Tomato & Mayonnaise
-                            <p className = "heading-tertiary">Bullseye Burger $8.95</p>
+                            <p className = "heading-tertiary">Bullseye Burger $11.45</p>
                                 Garlic, Double Bacon, Lettuce, Tomato, Caesar's sauce, Parmesan 
-                            <p className = "heading-tertiary">House Classic Burger $8.95</p>
+                            <p className = "heading-tertiary">House Classic Burger $11.45</p>
                                 American Cheese, Lettuce, Tomato & Red Onions 
-                            <p className = "heading-tertiary">Jalapeño Burger $8.95</p>
+                            <p className = "heading-tertiary">Jalapeño Burger $11.45</p>
                                 Chipotle Ranch, Jalapeño, Lettuce, Tomato & Red Onions
-                            <p className = "heading-tertiary">Guacamole Burger $8.95</p>
+                            <p className = "heading-tertiary">Guacamole Burger $11.45</p>
                                 Cheddar Cheese, Lettuce, Tomato, Red Onions, Chipotle Ranch
-                            <p className = "heading-tertiary">Avocado Burger $8.95</p>
+                            <p className = "heading-tertiary">Avocado Burger $11.45</p>
                                 Lettuce, Tomato, Onion & Avocado
-                            <p className = "heading-tertiary">Buffalo Burger $8.95</p>
+                            <p className = "heading-tertiary">Buffalo Burger $11.45</p>
                                 1/4 Pound Burger Topped with Crispy Chicken Tenders, Tossed in Our Buffalo Wing Sauce, Blue Cheese & Crispy Onions on a Burger Bun
-                            <p className = "heading-tertiary">The South Philly Burger $8.95</p>
+                            <p className = "heading-tertiary">The South Philly Burger $11.45</p>
                                 2 patties of 1/4 Pound Burger Topped with Roasted Peppers, Fried Onions, Mushrooms & Melted Cheddar on a Brioche Bun
-                            <p className = "heading-tertiary">Naked Angus $8.95</p>
+                            <p className = "heading-tertiary">Naked Angus $11.45</p>
                                 No Bread, Lettuce, Tomato, Red Onions, Pickles, Mayo, Ketchup, Mustard & Cheddar Cheese
-                            <p className = "heading-tertiary">Philadelphia Burger $8.95</p>
+                            <p className = "heading-tertiary">Philadelphia Burger $11.45</p>
                                 Philadelphia Cream Cheese, Bacon, Lettuce & Tomato
-                            <p className = "heading-tertiary">The Melt $8.95</p>
+                            <p className = "heading-tertiary">The Melt $11.45</p>
                                 Bacon, Fried Onions, Pickles, Mustard & Cheese Whiz on a Rye Bread
-                            <p className = "heading-tertiary">Cheddar Bacon $8.95</p>
+                            <p className = "heading-tertiary">Cheddar Bacon $11.45</p>
                                 With Bacon, Lettuce, Melted Cheddar Cheese And Smoked Mayo Sauce
-                            <p className = "heading-tertiary">Texas BBQ $8.95</p>
+                            <p className = "heading-tertiary">Texas BBQ $11.45</p>
                                 With Bacon, Melted Cheddar Cheese, Tomato, Lettuce And BBQ Sauce
-                            <p className = "heading-tertiary">Mexican $8.95</p>
+                            <p className = "heading-tertiary">Mexican $11.45</p>
                                 With Bacon, Lettuce, Mayo Yogurt Sauce, Nachos, Melted Cheddar Cheese And Caramelized Onions With Jalapeño And Pineapple
-                            <p className = "heading-tertiary">Chili $8.95</p>
+                            <p className = "heading-tertiary">Chili $11.45</p>
                                 With Cheeese, Tomato, Lettuce, Pickles, Spicy Chili Sauce And Mayonnaise
-                            <p className = "heading-tertiary">Pizza Burger $8.95</p>
+                            <p className = "heading-tertiary">Pizza Burger $11.45</p>
                                 Pizza Sauce & Mozzarella Cheese
-                            <p className = "heading-tertiary">Special Burger $8.95</p>
+                            <p className = "heading-tertiary">Special Burger $11.45</p>
                                 2 Patties of 100% Angus Beef on Ciabatta Bread with Melted Swiss Cheese, Tomatoes, Mayo, How Peppers & Pineapple 
                         </div>
         };
@@ -194,7 +194,7 @@ export  const sideOrders = {
                         <p className = "heading-tertiary">Chicken Tenders (5) $7.75</p>
                         <p className = "heading-tertiary">Hand Dipped Milkshake (20oz) $4.25</p>
                             Vanilla, Chocolate, Strawberry Banana, Chocolate Banana, PeanutButter, Rasberry, Coffee, Mint Cookie Cream, Pumpkin Pie, Egg Nog
-                        <p className = "heading-tertiary">Floats $1.00</p>
+                        <p className = "heading-tertiary">Floats $4.25</p>
                             Orange, Cola, Grape, Sprite, Root Beer
                     </div>
         };
