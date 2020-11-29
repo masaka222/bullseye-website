@@ -29,6 +29,19 @@
     letter-spacing: 5px;
 }
 
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
 /*Phone and landscape*/
 @media (max-width: 56.25em) and
 (orientation: landscape){
