@@ -8,7 +8,7 @@ const HeadingPrimary = (props) => {
                     <span className = "heading-secondary-main">&#x02605;{props.headerSubHeading}&#x02605;</span>
                 </h1>
 
-                <a href='https://www.bullseyeburgerhousetogo.com' className='btn btn-white'>Order Online</a>
+                <a href='https://onlineordering.rmpos.com/Order/?wci=oFh1t6Ok' className='btn btn-white'>Order Online</a>
             </div>
         );
 }
