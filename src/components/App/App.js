@@ -47,7 +47,7 @@ class App extends React.Component {
         
 
         /*Functions*/
-        const setModalProperties = (item, subHeading, menu, item2, subHeading2, menu2, item3, menu3) => {
+        const setModalProperties = (item, subHeading, menu, item2, subHeading2, menu2, item3, subHeading3, menu3) => {
             this.setState(()=>({
                 modalHeading: item,
                 modalSubHeading: subHeading,
@@ -56,6 +56,7 @@ class App extends React.Component {
                 modalSubHeading2: subHeading2,
                 modalMenu2: menu2,
                 modalHeading3: item3,
+                modalSubHeading3: subHeading3,
                 modalMenu3: menu3
             }));
         }
@@ -69,6 +70,7 @@ class App extends React.Component {
                 modalSubHeading2: undefined,
                 modalMenu2: undefined,
                 modalHeading3: undefined,
+                modalSubHeading3: undefined,
                 modalMenu3: undefined
             }));
         }
@@ -176,6 +178,7 @@ class App extends React.Component {
                     modalSubHeading2 =  {this.state.modalSubHeading2}
                     modalMenu2      =   {this.state.modalMenu2}
                     modalHeading3   =   {this.state.modalHeading3} 
+                    modalSubHeading3 =  {this.state.modalSubHeading3}
                     modalMenu3      =   {this.state.modalMenu3}
                     handleClearModalProperties = {handleClearModalProperties}
                 />

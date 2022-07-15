@@ -11,6 +11,7 @@ const MenuModal = (props) => {
             closeTimeoutMS = {300}
             className = "modal"
             overlayClassName = "modal__overlay"
+            appElement={document.getElementById('root') || undefined}
         >
             <div className="modal__up">
                 <a onClick={props.handleClearModalProperties} className="modal__close">
@@ -47,6 +48,7 @@ const MenuModal = (props) => {
                         headingSecondary = {props.modalHeading3}
                         headingMarginBottom = {'u-margin-bottom-small'}
                     />
+                    <p className = "heading-tertiary u-center-text u-margin-bottom-medium" style={{color: "#BE2600"}}> {props.modalSubHeading3} </p>
                     {props.modalMenu3}
                 </div>
                 }

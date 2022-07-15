@@ -44,12 +44,12 @@ class Menu extends React.Component {
             return (
                 <div>
                     <section className="section-menu" id="section-menu">
-                    <Waypoint
+                        <Waypoint
                             onEnter={animateCardIn}
-                    />
-                            <MenuGrid 
-                                setModalProperties = {this.props.setModalProperties}
-                            />
+                        />
+                        <MenuGrid 
+                            setModalProperties = {this.props.setModalProperties}
+                        />
                     </section>
                 </div>
             );

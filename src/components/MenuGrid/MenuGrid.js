@@ -66,6 +66,11 @@ const MenuGrid = (props) => {
                             title = {tacos.title} 
                             subtitle = {tacos.subtitle}
                             menu = {tacos.menu}
+                            title2 = {tacos.title2}
+                            subtitle2 = {tacos.subtitle2}
+                            menu2 = {tacos.menu2}
+                            title3 = {tacos.title3}
+                            menu3 = {tacos.menu3}
                         />
                     </div>
                     <div className="col-1-of-3">
@@ -75,6 +80,11 @@ const MenuGrid = (props) => {
                             title = {sideOrders.title} 
                             subtitle = {sideOrders.subtitle}
                             menu = {sideOrders.menu}
+                            title2 = {sideOrders.title2}
+                            menu2 = {sideOrders.menu2}
+                            title3 = {sideOrders.title3}
+                            subtitle3 = {sideOrders.subtitle3}
+                            menu3 = {sideOrders.menu3}
                         />
                     </div>
                 </div> 
