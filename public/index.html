@@ -28,6 +28,16 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+        w[o] = w[o] || function (opt) { w[o].q = w[o].q || opt };
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.src = f;
+        js.async = 1;
+        if (fjs) { fjs.parentNode.insertBefore(js, fjs) } else { fjs = d.getElementsByTagName('head')[0]; fjs.appendChild(js) }
+      })(window, document, 'script', 'SliceWidgets', 'https://restaurant-widgets-integrations.slicelife.com/widget.js');
+      SliceWidgets({ shopUuid: '5d4473c4-13ca-4ac7-bb9d-92605a50dec3' });
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
